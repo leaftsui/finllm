@@ -1,0 +1,3061 @@
+[
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "CompanyCode": 355726,
+                "InfoPublDate": "2023-02-20 12:00:00.000",
+                "SHList": "陕西省华秦投资集团有限公司",
+                "SHKind": "投资、咨询公司",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 355726,
+                "InfoPublDate": "2023-02-20 12:00:00.000",
+                "SHList": "陕西投资集团有限公司",
+                "SHKind": "投资、咨询公司",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 355726,
+                "InfoPublDate": "2023-02-20 12:00:00.000",
+                "SHList": "陕西投资集团有限公司",
+                "SHKind": "投资、咨询公司",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 367167,
+                "InfoPublDate": "2023-02-17 12:00:00.000",
+                "SHList": "徐州矿务集团有限公司",
+                "SHKind": "一般企业",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 418569,
+                "InfoPublDate": "2023-01-13 12:00:00.000",
+                "SHList": "湘潭电化集团有限公司",
+                "SHKind": "一般企业",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 511027,
+                "InfoPublDate": "2022-10-31 12:00:00.000",
+                "SHList": "福建星网锐捷通讯股份有限公司",
+                "SHKind": "一般企业",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 511027,
+                "InfoPublDate": "2022-10-31 12:00:00.000",
+                "SHList": "福建星网锐捷通讯股份有限公司",
+                "SHKind": "一般企业",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 10095036,
+                "InfoPublDate": "2022-10-14 12:00:00.000",
+                "SHList": "华厦医疗投资(厦门)有限公司",
+                "SHKind": "投资、咨询公司",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 10095036,
+                "InfoPublDate": "2022-10-14 12:00:00.000",
+                "SHList": "华厦医疗投资(厦门)有限公司",
+                "SHKind": "投资、咨询公司",
+                "SHAttribute": 2
+            },
+            {
+                "CompanyCode": 207274,
+                "InfoPublDate": "2022-07-08 12:00:00.000",
+                "SHList": "冯宇霞",
+                "SHKind": "自然人",
+                "SHAttribute": 1
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockshareholderdb.secumain' doesn't exist\n[SQL: SELECT AStockShareholderDB.LC_MainSHListNew.HoldSumChange, AStockShareholderDB.LC_MainSHListNew.HoldSumChangeRate\nFROM AStockShareholderDB.LC_MainSHListNew\nJOIN AStockShareholderDB.SecuMain ON AStockShareholderDB.LC_MainSHListNew.CompanyCode = AStockShareholderDB.SecuMain.CompanyCode\nWHERE AStockShareholderDB.SecuMain.CompanyCode = '600872'\nAND AStockShareholderDB.LC_MainSHListNew.InfoTypeCode = 1\nAND AStockShareholderDB.LC_MainSHListNew.Year = YEAR(AStockShareholderDB.SecuMain.ControlChangeDate)\nAND AStockShareholderDB.SecuMain.ControlChange = '是';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfStocks": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.DatabaseError) 3024 (HY000): Query execution was interrupted, maximum statement execution time exceeded\n[SQL: SELECT AStockMarketQuotesDB.QT_StockPerformance.InnerCode\nFROM AStockMarketQuotesDB.QT_StockPerformance\nWHERE AStockMarketQuotesDB.QT_StockPerformance.ClosePrice > 75\n  AND AStockMarketQuotesDB.QT_StockPerformance.TradingDay IN (\n    SELECT MAX(TradingDay)\n    FROM AStockMarketQuotesDB.QT_StockPerformance\n    GROUP BY InnerCode\n  )\n  AND AStockMarketQuotesDB.QT_StockPerformance.HighPriceRY = AStockMarketQuotesDB.QT_StockPerformance.HighestClosePriceRY\n  AND AStockMarketQuotesDB.QT_StockPerformance.TradingDay = (\n    SELECT MAX(TradingDay)\n    FROM AStockMarketQuotesDB.QT_StockPerformance\n    WHERE TradingDay < AStockMarketQuotesDB.QT_StockPerformance.TradingDay\n  )\n  AND AStockMarketQuotesDB.QT_StockPerformance.Ifsuspend = 0\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/4xp6)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalEmployeeCount": 176610
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalMastersOrAbove": 551919
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalRetirees": 7679
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "ID": 599734284060,
+                "InnerCode": 15920,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-02 12:00:00.000",
+                "OutDate": "2019-01-03 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-02 08:51:24.580",
+                "UpdateTime": "2023-12-13 11:07:16.213",
+                "JSID": 755817559722
+            },
+            {
+                "ID": 599734284156,
+                "InnerCode": 1534,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-02 12:00:00.000",
+                "OutDate": "2019-01-03 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-02 08:51:24.857",
+                "UpdateTime": "2023-12-13 11:04:51.140",
+                "JSID": 755817426183
+            },
+            {
+                "ID": 599757178559,
+                "InnerCode": 1534,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-03 12:00:00.000",
+                "OutDate": "2019-01-04 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-02 03:13:00.183",
+                "UpdateTime": "2023-12-13 11:04:51.140",
+                "JSID": 755817426184
+            },
+            {
+                "ID": 599846181741,
+                "InnerCode": 2109,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-04 12:00:00.000",
+                "OutDate": "2019-01-07 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-03 03:56:23.750",
+                "UpdateTime": "2023-12-13 11:04:56.773",
+                "JSID": 755817448143
+            },
+            {
+                "ID": 599846182056,
+                "InnerCode": 1534,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-04 12:00:00.000",
+                "OutDate": "2019-01-07 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-03 03:56:24.880",
+                "UpdateTime": "2023-12-13 11:04:51.143",
+                "JSID": 755817426185
+            },
+            {
+                "ID": 599915319644,
+                "InnerCode": 1891,
+                "ConceptCode": 15031290,
+                "InDate": "2019-01-04 12:00:00.000",
+                "OutDate": null,
+                "IndiState": 1,
+                "Remark": "19年1月4日发布公告称，公司拟以10.00亿到20.00亿元回购不超过1.73亿股公司股份。",
+                "InfoPublDate": "2019-01-04 11:08:39.700",
+                "UpdateTime": "2023-12-13 11:04:53.837",
+                "JSID": 755817438438
+            },
+            {
+                "ID": 599930588842,
+                "InnerCode": 1500,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-07 12:00:00.000",
+                "OutDate": "2019-01-08 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-04 03:23:10.510",
+                "UpdateTime": "2023-12-13 11:04:50.830",
+                "JSID": 755817424749
+            },
+            {
+                "ID": 599930588922,
+                "InnerCode": 415,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-07 12:00:00.000",
+                "OutDate": "2019-01-08 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-04 03:23:11.733",
+                "UpdateTime": "2023-12-13 11:04:43.600",
+                "JSID": 755817393047
+            },
+            {
+                "ID": 599930589062,
+                "InnerCode": 35436,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-07 12:00:00.000",
+                "OutDate": "2019-01-08 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-04 03:23:11.973",
+                "UpdateTime": "2023-12-13 11:07:43.143",
+                "JSID": 755817666724
+            },
+            {
+                "ID": 599930589237,
+                "InnerCode": 65468,
+                "ConceptCode": 15031283,
+                "InDate": "2019-01-07 12:00:00.000",
+                "OutDate": "2019-01-08 12:00:00.000",
+                "IndiState": 0,
+                "Remark": "该股收盘价达到涨停",
+                "InfoPublDate": "2019-01-04 03:23:12.517",
+                "UpdateTime": "2023-12-13 11:08:07.027",
+                "JSID": 755817796898
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalStocks": 2348,
+                "WithdrawnStocks": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "ConceptCode": 11100002,
+                "SecuAbbr": "横店东磁"
+            },
+            {
+                "ConceptCode": 14051365,
+                "SecuAbbr": "横店东磁"
+            },
+            {
+                "ConceptCode": 14061392,
+                "SecuAbbr": "华峰化学"
+            },
+            {
+                "ConceptCode": 13080006,
+                "SecuAbbr": "东华软件"
+            },
+            {
+                "ConceptCode": 11060018,
+                "SecuAbbr": "东华软件"
+            },
+            {
+                "ConceptCode": 11060014,
+                "SecuAbbr": "东华软件"
+            },
+            {
+                "ConceptCode": 13110005,
+                "SecuAbbr": "东华软件"
+            },
+            {
+                "ConceptCode": 11021291,
+                "SecuAbbr": "东华软件"
+            },
+            {
+                "ConceptCode": 13231340,
+                "SecuAbbr": "东华软件"
+            },
+            {
+                "ConceptCode": 14021391,
+                "SecuAbbr": "太阳纸业"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfSubConcepts": 13685
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfChanges": 1149,
+                "CompanyCodes": "11,25,42,61,67,69,70,72,86,114,178,216,251,261,264,267,275,301,313,327,341,356,363,366,371,373,399,402,412,428,449,452,454,461,472,476,489,515,524,953,955,958,959,960,962,964,1071,1098,1120,1137,1139,1140,1143,1144,1146,1147,1152,1179,1215,1224,1228,1242,1248,1272,1281,1284,1288,1317,1329,1340,1358,1364,1365,1367,1384,1388,1409,1411,1413,1425,1445,1457,1472,1477,1478,1516,1522,1536,1538,1543,1548,1557,1562,1588,1601,1609,1611,1639,1648,1663,1671,1686,1688,1700,1702,1716,1733,1750,1751,1755,1757,1759,1774,1779,1781,1789,1810,1813,1814,1831,1842,1998,2000,2001,2005,2007,2344,2349,2361,3179,3440,3673,3844,4031,4053,4237,4285,7493,13268,14911,15396,17731,18309,22613,23394,25041,25059,30258,30794,33473,34991,35285,36754,37306,37455,37660,37721,38759,41649,41731,42638,50003,50015,50307,50316,50387,50423,70722,71040,71895,72007,72373,72718,73445,73448,73924,74095,74202,74646,74691,74733,74734,74744,74746,74756,74971,75074,75140,75205,75211,75213,76592,76758,76944,76979,77011,77012,77025,77253,77265,77318,77931,77955"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'c.CompanyCode' in 'field list'\n[SQL: SELECT COUNT(DISTINCT c.CompanyCode), ei.ThirdIndustryName\nFROM AStockIndustryDB.LC_COConcept c\nJOIN AStockIndustryDB.LC_ExgIndustry ei ON c.CompanyCode = ei.CompanyCode\nJOIN AStockIndustryDB.LC_ConceptList cl ON c.ConceptCode = cl.ConceptCode\nWHERE YEAR(c.InDate) = 2021\nAND ei.Standard = 38\nAND ei.InsertTime >= '2021-01-01'\nAND ei.InsertTime < '2022-01-01'\nGROUP BY ei.ThirdIndustryName;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: Commands out of sync; you can't run this command now"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalDisclosures": 8991,
+                "DisclosuresIn2021": 3409
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalReveals": 0,
+                "Reveals2021": null,
+                "Reveals2020": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'CompanyName' in 'where clause'\n[SQL: SELECT ThirdIndustryName \nFROM AStockIndustryDB.LC_ExgIndustry \nWHERE CompanyCode = (SELECT CompanyCode FROM constantdb.secumain WHERE CompanyName = '天顺风能');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalStocks": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockindustrydb.ct_systemconst' doesn't exist\n[SQL: SELECT MAX(IndOperatingRevenue) AS MaxIndustryRevenue\nFROM AStockIndustryDB.LC_IndFinIndicators\nWHERE InfoPublDate LIKE '2021-08%'\nAND Standard IN (SELECT DM FROM AStockIndustryDB.CT_SystemConst WHERE LB = 1081 AND DM IN (24, 41))\nAND SectorCode = 5;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: Commands out of sync; you can't run this command now"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'CompanyName' in 'field list'\n[SQL: SELECT\n    CompanyName,\n    SUM(ExpectedProceeds) AS TotalExpectedProceeds\nFROM\n    AStockFinanceDB.LC_AShareSeasonedNewIssue\nGROUP BY\n    CompanyName\nORDER BY\n    TotalExpectedProceeds DESC\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "InnerCode": 14704,
+                "IssueCostTotal": 136800048.95,
+                "IssuePricePerShare": 6.8
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalRDInput": null,
+                "RDStaffNum": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockbasicinfodb.lc_intassetsdetail' doesn't exist\n[SQL: SELECT \n    ExpensedRDInput / TotalRDInput * 100 AS ExpensedRDRatio,\n    CapitalizedRDInput / TotalRDInput * 100 AS CapitalizedRDRatio\nFROM \n    AStockBasicInfoDB.LC_IntAssetsDetail\nWHERE \n    IfMerged = 1 AND IfAdjusted = 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT\n  AStockFinanceDB.LC_IntAssetsDetail.CompanyCode,\n  (SELECT SecuMain.SecuAbbr FROM SecuMain WHERE SecuMain.CompanyCode = AStockFinanceDB.LC_IntAssetsDetail.CompanyCode) AS CompanyAbbreviation,\n  AStockFinanceDB.LC_IntAssetsDetail.TotalRDInput\nFROM\n  AStockFinanceDB.LC_IntAssetsDetail\nWHERE\n  AStockFinanceDB.LC_IntAssetsDetail.EndDate = (SELECT MAX(EndDate) FROM AStockFinanceDB.LC_IntAssetsDetail)\nORDER BY\n  AStockFinanceDB.LC_IntAssetsDetail.TotalRDInput DESC\nLIMIT 3;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockbasicinfodb.lc_mainoperincome' doesn't exist\n[SQL: SELECT \n    CompanyCode,\n    Project,\n    MainOperIncome,\n    CAST(MainOperIncome AS DECIMAL(10, 2)) AS MainOperIncomeFormatted,\n    MainOperCost,\n    MainOperProfit,\n    CAST(MainOperProfit AS DECIMAL(10, 2)) AS MainOperProfitFormatted\nFROM \n    AStockBasicInfoDB.LC_MainOperIncome\nWHERE \n    CompanyCode = '000958'\n    AND EndDate = '2021-12-31'\n    AND DateType IN (9, 30) -- Assuming 9 for annual and 30 for cumulative\n    AND IfMerged = 1 -- Assuming we need the merged data\n    AND IfAdjusted = 1 -- Assuming we need the adjusted data\n    AND Classification = 20 -- Assuming we need product-wise classification\n    AND Project <> '其他业务' -- Excluding other business\n    AND RegionAndBusiness IS NOT NULL -- Assuming we need data with region and business nature\nORDER BY \n    MainOperIncome DESC\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT hshare_code, chinese_name, english_name \nFROM bank_info \nWHERE bank_name = '中国工商银行';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Chairman": "李海涛",
+                "Eail": "info@szihl.com"
+            },
+            {
+                "Chairman": "王晖",
+                "Eail": "public@casil-group.com"
+            },
+            {
+                "Chairman": "孙劼",
+                "Eail": "investor@cecht.com.hk"
+            },
+            {
+                "Chairman": "苏凡荣",
+                "Eail": null
+            },
+            {
+                "Chairman": "田明",
+                "Eail": "landsea.hkg@hkstrategies.com"
+            },
+            {
+                "Chairman": "万宇清",
+                "Eail": "admin@polyhongkong.com.hk"
+            },
+            {
+                "Chairman": "林昭远",
+                "Eail": "ir@yuexiuproperty.com"
+            },
+            {
+                "Chairman": "孔栋",
+                "Eail": null
+            },
+            {
+                "Chairman": "旷虎(代)",
+                "Eail": "info@gdland.com.hk"
+            },
+            {
+                "Chairman": "付斌",
+                "Eail": "info@kunlun.com.hk"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'HK_StockArchives.InnerCode' in 'on clause'\n[SQL: SELECT \n    HK_StockArchives.ChiName AS CompanyName,\n    HK_EmployeeChange.QuaBeforeChange AS EmployeesBefore,\n    HK_EmployeeChange.QuaAfterChange AS EmployeesAfter\nFROM \n    HKStockDB.HK_StockArchives\nJOIN \n    HKStockDB.HK_EmployeeChange ON HK_StockArchives.InnerCode = HK_EmployeeChange.InnerCode\nWHERE \n    HK_EmployeeChange.EffectiveDate = '2020-12-31'\nAND \n    HK_EmployeeChange.IfEffected = 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "HighestPrice": 479.98
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "LowestPriceInYear": 1.15
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "HighestPriceLastMonth": 650.0,
+                "LowestPriceLastYear": 1.23,
+                "Difference": 648.77
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "ID": 736561954928,
+                "InnerCode": 1000593,
+                "TradingDay": "2021-01-08 12:00:00.000",
+                "PrevClosePrice": 4.45,
+                "OpenPrice": 3.95,
+                "HighPrice": 4.41,
+                "LowPrice": 3.95,
+                "ClosePrice": 4.41,
+                "CurrencyUnitCode": 1100,
+                "TurnoverVolume": 1347260187.0,
+                "TurnoverValue": 5662010105.5,
+                "ChangeOF": -0.04,
+                "ChangePCT": -0.8989,
+                "RangePCT": 10.3371,
+                "TurnoverRate": 4.4031,
+                "AvgPrice": 4.2026,
+                "TotalMV": 134937728361.45,
+                "NegotiableMV": 134937728361.45,
+                "TurnoverValueRW": 11219959955.31,
+                "TurnoverVolumeRW": 2553782760.0,
+                "ChangeOFRW": -0.0538,
+                "ChangePCTRW": -0.8986,
+                "RangePCTRW": 24.4931,
+                "TurnoverRateRW": 8.3463,
+                "AvgPriceRW": 5.9114,
+                "HighPriceRW": 5.04,
+                "LowPriceRW": 3.95,
+                "HighestClosePriceRW": 5.02,
+                "LowestClosePriceRW": 4.41,
+                "TurnoverValuePerDayRW": 2243991991.062,
+                "TurnoverRatePerDayRW": 1.6693,
+                "TurnVolumePerDayRW": 510756552.0,
+                "ChangePCTPerDayRW": 0.0404,
+                "RangePCTPerDayRW": 8.5967,
+                "TotalMVPerDayRW": 141975296960.8,
+                "NegotiableMVPerDayRW": 141975296960.8,
+                "TurnoverValueTW": 11219959955.31,
+                "TurnoverVolumeTW": 2553782760.0,
+                "ChangeOFTW": 2553782760.0,
+                "ChangePCTTW": -0.8986,
+                "RangePCTTW": 24.4931,
+                "TurnoverRateTW": 8.3463,
+                "AvgPriceTW": 5.9114,
+                "HighPriceTW": 5.04,
+                "LowPriceTW": 3.95,
+                "HighestClosePriceTW": 5.02,
+                "LowestClosePriceTW": 4.41,
+                "TurnoverValuePerDayTW": 2243991991.062,
+                "TurnoverRatePerDayTW": 1.6693,
+                "TurnVolumePerDayTW": 510756552.0,
+                "ChangePCTPerDayTW": 0.0404,
+                "RangePCTPerDayTW": 8.5967,
+                "TotalMVPerDayTW": 141975296960.8,
+                "NegotiableMVPerDayTW": 141975296960.8,
+                "TurnoverValueRM": 15229030018.5,
+                "TurnoverVolumeRM": 3449661339.0,
+                "ChangeOFRM": -0.0807,
+                "ChangePCTRM": -1.3418,
+                "RangePCTRM": 24.3836,
+                "TurnoverRateRM": 11.2742,
+                "AvgPriceRM": 5.9399,
+                "HighPriceRM": 5.04,
+                "LowPriceRM": 3.95,
+                "HighestClosePriceRM": 5.02,
+                "LowestClosePriceRM": 4.31,
+                "TurnoverValuePerDayRM": 725191905.6429,
+                "TurnoverRatePerDayRM": 0.5369,
+                "TurnVolumePerDayRM": 164269587.5714,
+                "ChangePCTPerDayRM": 0.0007,
+                "RangePCTPerDayRM": 4.5688,
+                "TotalMVPerDayRM": 137254443490.4286,
+                "NegotiableMVPerDayRM": 137254443490.4286,
+                "TurnoverValueTM": 11219959955.31,
+                "TurnoverVolumeTM": 2553782760.0,
+                "ChangeOFTM": -0.0538,
+                "ChangePCTTM": -0.8986,
+                "RangePCTTM": 24.4931,
+                "TurnoverRateTM": 8.3463,
+                "AvgPriceTM": 5.9114,
+                "HighPriceTM": 5.04,
+                "LowPriceTM": 3.95,
+                "HighestClosePriceTM": 5.02,
+                "LowestClosePriceTM": 4.41,
+                "TurnoverValuePerDayTM": 2243991991.062,
+                "TurnoverRatePerDayTM": 1.6693,
+                "TurnVolumePerDayTM": 510756552.0,
+                "ChangePCTPerDayTM": 0.0404,
+                "RangePCTPerDayTM": 8.5967,
+                "TotalMVPerDayTM": 141975296960.8,
+                "NegotiableMVPerDayTM": 141975296960.8,
+                "TurnoverValueRMThree": 28242600433.964,
+                "TurnoverVolumeRMThree": 6007567775.0,
+                "ChangeOFRMThree": -0.9687,
+                "ChangePCTRMThree": -14.0345,
+                "RangePCTRMThree": 42.3004,
+                "TurnoverRateRMThree": 19.634,
+                "AvgPriceRMThree": 6.3254,
+                "HighPriceRMThree": 6.12,
+                "LowPriceRMThree": 3.95,
+                "HighestClosePRMThree": 6.0,
+                "LowestClosePRMThree": 4.31,
+                "TurnValuePDayRMThree": 455525813.451,
+                "TurnRatePDayRMThree": 0.3167,
+                "TurnVolumePDayRMThree": 96896254.4355,
+                "ChangePCTPDayRMThree": -0.1774,
+                "RangePCTPDayRMThree": 4.1777,
+                "TotalMVPerDayRMThree": 148183755094.0274,
+                "NegotiableMVPRMThree": 148183755094.0274,
+                "TurnoverValueRMSix": 47869719377.344,
+                "TurnoverVolumeRMSix": 9657203507.0,
+                "ChangeOFRMSix": -0.4978,
+                "ChangePCTRMSix": -7.7401,
+                "RangePCTRMSix": 57.5318,
+                "TurnoverRateRMSix": 31.5616,
+                "AvgPriceRMSix": 6.6695,
+                "HighPriceRMSix": 6.7,
+                "LowPriceRMSix": 3.95,
+                "HighestClosePRMSix": 6.53,
+                "LowestClosePRMSix": 4.24,
+                "TurnValuePDayRMSix": 379918407.7567,
+                "TurnRatePDayRMSix": 0.2505,
+                "TurnVolumePDayRMSix": 76644472.2778,
+                "ChangePCTPDayRMSix": 0.0094,
+                "RangePCTPDayRMSix": 4.3525,
+                "TotalMVPerDayRMSix": 152750207890.8607,
+                "NegotiableMVPRMSix": 152750207890.8607,
+                "TurnoverValueRY": 78377840374.062,
+                "TurnoverVolumeRY": 15579684365.0,
+                "ChangeOFRY": -3.2358,
+                "ChangePCTRY": -35.2891,
+                "RangePCTRY": 49.9291,
+                "TurnoverRateRY": 50.9177,
+                "AvgPriceRY": 6.6934,
+                "HighPriceRY": 7.37,
+                "LowPriceRY": 3.84,
+                "HighestClosePRY": 7.36,
+                "LowestClosePRY": 3.9,
+                "TurnoverValuePDayRY": 316039678.9277,
+                "TurnoverRatePDayRY": 0.2053,
+                "TurnVolumePDayRY": 62821307.9234,
+                "ChangePCTPDayRY": -0.1138,
+                "RangePCTPDayRY": 3.812,
+                "TotalMVPerDayRY": 158329254146.0006,
+                "NegotiableMVPRY": 158329254146.0006,
+                "TurnoverValueYTD": 11219959955.31,
+                "TurnoverVolumeYTD": 2553782760.0,
+                "ChangeOFYTD": -0.0538,
+                "ChangePCTYTD": -0.8986,
+                "RangePCTYTD": 24.4931,
+                "TurnoverRateYTD": 8.3463,
+                "AvgPriceYTD": 5.9114,
+                "HighPriceYTD": 5.04,
+                "LowPriceYTD": 3.95,
+                "HighestClosePriceYTD": 5.02,
+                "LowestClosePriceYTD": 4.41,
+                "TurnoverValuePerDayYTD": 2243991991.062,
+                "TurnoverRatePerDayYTD": 1.6693,
+                "TurnVolumePDayYTD": 1.6693,
+                "ChangePCTPerDayYTD": 0.0404,
+                "RangePCTPerDayYTD": 8.5967,
+                "TotalMVPerDayYTD": 141975296960.8,
+                "NegotiableMVPYTD": 141975296960.8,
+                "HighAdjustedPrice": 22.2126,
+                "HighAdjustedPriceDate": "2008-02-18 12:00:00.000",
+                "LowAdjustedPrice": 3.8,
+                "LowAdjustedPriceDate": "2003-04-24 12:00:00.000",
+                "UpdateTime": "2023-05-04 10:08:41.710",
+                "InsertTime": "2023-05-04 10:08:41.710",
+                "JSID": 736567038198
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'hkstockdb.qt_stockperformance' doesn't exist\n[SQL: SELECT * FROM HKStockDB.QT_StockPerformance ORDER BY TurnoverRate DESC LIMIT 2, 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'hkstockdb.hk_stockperformance' doesn't exist\n[SQL: SELECT * FROM HKStockDB.HK_StockPerformance WHERE date = '2019-09-02' ORDER BY turnover_rate DESC LIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "CompanyCode": 154266
+            },
+            {
+                "CompanyCode": 283573
+            },
+            {
+                "CompanyCode": 54
+            },
+            {
+                "CompanyCode": 168759
+            },
+            {
+                "CompanyCode": 174454
+            },
+            {
+                "CompanyCode": 1358
+            },
+            {
+                "CompanyCode": 72579
+            },
+            {
+                "CompanyCode": 1588
+            },
+            {
+                "CompanyCode": 76850
+            },
+            {
+                "CompanyCode": 1687
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "CompanyCode": 154266
+            },
+            {
+                "CompanyCode": 283573
+            },
+            {
+                "CompanyCode": 54
+            },
+            {
+                "CompanyCode": 168759
+            },
+            {
+                "CompanyCode": 174454
+            },
+            {
+                "CompanyCode": 1358
+            },
+            {
+                "CompanyCode": 72579
+            },
+            {
+                "CompanyCode": 1588
+            },
+            {
+                "CompanyCode": 76850
+            },
+            {
+                "CompanyCode": 1687
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'LC_StockArchives.AStockAbbr' in 'field list'\n[SQL: SELECT LC_StockArchives.AStockAbbr, LC_CashFlowStatementAll.NetOperateCashFlow\nFROM AStockBasicInfoDB.LC_StockArchives\nJOIN AStockFinanceDB.LC_CashFlowStatementAll ON LC_StockArchives.CompanyCode = LC_CashFlowStatementAll.CompanyCode\nWHERE LC_CashFlowStatementAll.EndDate = '2021-12-31'\nORDER BY LC_CashFlowStatementAll.NetOperateCashFlow DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT A.CompanyCode, B.NetProfit\nFROM LC_BalanceSheetAll AS A\nJOIN LC_IncomeStatementAll AS B ON A.CompanyCode = B.CompanyCode\nWHERE A.EndDate = '2021-12-31'\nAND A.InfoSourceCode = 110101\nAND B.EndDate = '2021-12-31'\nAND B.InfoSourceCode = 110101\nAND A.IfMerged = 1\nAND B.IfMerged = 1\nAND A.AccountingStandards = 1\nAND B.AccountingStandards = 1\nORDER BY A.TotalAssets DESC, B.NetProfit DESC\nLIMIT 2;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10 SM.ChiName, SP.IncreaseRate\nFROM HKStockDB.HK_StockPerformance SP\nJOIN Consta' at line 1\n[SQL: SELECT TOP 10 SM.ChiName, SP.IncreaseRate\nFROM HKStockDB.HK_StockPerformance SP\nJOIN ConstantDB.SecuMain SM ON SP.InnerCode = SM.InnerCode\nWHERE SP.Date >= '2020-04-01' AND SP.Date <= '2020-04-30'\nORDER BY SP.IncreaseRate DESC]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 InnerCode, ChangePCTTM\nFROM HKStockDB.CS_HKStockPerformance\nWHERE TradingDay >' at line 1\n[SQL: SELECT TOP 1 InnerCode, ChangePCTTM\nFROM HKStockDB.CS_HKStockPerformance\nWHERE TradingDay >= '2020-04-01' AND TradingDay < '2020-05-01'\nGROUP BY InnerCode\nHAVING InnerCode IN (\n    SELECT InnerCode\n    FROM HKStockDB.CS_HKStockPerformance\n    WHERE TradingDay >= '2020-03-01' AND TradingDay < '2020-04-01'\n    ORDER BY ChangePCTTM DESC\n    LIMIT 10\n)\nORDER BY ChangePCTTM ASC;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT ContactEmail FROM AStockBasicInfoDB.LC_StockArchives WHERE CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE CompanyName = '东航物流');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfCompanies": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalLogisticsCompanies": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxBuybackAmount": 2699960993.3
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10 CompanyCode, PCTAfterRece AS '持股比例'\nFROM AStockShareholderDB.LC_Share' at line 1\n[SQL: SELECT TOP 10 CompanyCode, PCTAfterRece AS '持股比例'\nFROM AStockShareholderDB.LC_ShareTransfer\nWHERE InfoPublDate >= '2021-01-01' AND InfoPublDate <= '2021-12-31'\nORDER BY PCTAfterRece DESC;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalTechAndProductionStaff": 7847639
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "CompanyCount": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "COUNT(DISTINCT CompanyCode)": 444
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'SecuMain.TradingDay' in 'where clause'\n[SQL: SELECT COUNT(*) AS LimitUpCount\nFROM AStockMarketQuotesDB.QT_DailyQuote\nWHERE InnerCode = (SELECT InnerCode FROM constantdb.secumain WHERE SecuMain.TradingDay = QT_DailyQuote.TradingDay)\nAND ClosePrice > PrevClosePrice;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'IndustryClassification' in 'where clause'\n[SQL: SELECT SUM(TurnoverValue) AS TotalMarketValue\nFROM AStockMarketQuotesDB.QT_DailyQuote\nWHERE TradingDay = '2021-08-04'\nAND InnerCode IN (\n    SELECT InnerCode\n    FROM constantdb.secumain\n    WHERE IndustryClassification = '二级行业代码'  -- 请替换'二级行业代码'为实际查询的二级行业代码\n);]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "RegAddr": "江苏省无锡市江阴市利港镇"
+            },
+            {
+                "RegAddr": "北京市东城区永定门西滨河路8号院7楼西塔6-9层"
+            },
+            {
+                "RegAddr": "安徽省芜湖市鸠江区弋江北路亚夏汽车城"
+            },
+            {
+                "RegAddr": "江苏省苏州市太仓经济开发区宁波东路28号"
+            },
+            {
+                "RegAddr": "深圳市龙岗区南湾街道下李朗社区李朗路一号兆驰创新产业园"
+            },
+            {
+                "RegAddr": "广东省广州市增城区永宁街郭村仙宁路2号"
+            },
+            {
+                "RegAddr": "浙江省温州市瓯海区娄桥工业园南汇路98号"
+            },
+            {
+                "RegAddr": "北京市西城区新街口外大街28号B座234号"
+            },
+            {
+                "RegAddr": "深圳市福田区福保街道福保社区红柳道2号289数字半岛4层A区"
+            },
+            {
+                "RegAddr": "深圳市龙华区观澜街道大富苑工业区顺络观澜工业园"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "SHList": "邱光和",
+                "HoldSum": 440229300.0,
+                "PCTOfTotalShares": 16.319339
+            },
+            {
+                "SHList": "新湖控股有限公司",
+                "HoldSum": 1645763419.0,
+                "PCTOfTotalShares": 57.645793
+            },
+            {
+                "SHList": "中国船舶重工集团有限公司",
+                "HoldSum": 329032461.0,
+                "PCTOfTotalShares": 46.301556
+            },
+            {
+                "SHList": "加拿大丰业银行",
+                "HoldSum": 799600000.0,
+                "PCTOfTotalShares": 17.991
+            },
+            {
+                "SHList": "云天化集团有限责任公司",
+                "HoldSum": 699254292.0,
+                "PCTOfTotalShares": 38.056806
+            },
+            {
+                "SHList": "YUAN,YONGBIN",
+                "HoldSum": 83087500.0,
+                "PCTOfTotalShares": 20.33662
+            },
+            {
+                "SHList": "辽宁方大集团实业有限公司",
+                "HoldSum": 1088866658.0,
+                "PCTOfTotalShares": 40.021909
+            },
+            {
+                "SHList": "星星集团有限公司",
+                "HoldSum": 123753273.0,
+                "PCTOfTotalShares": 8.899066
+            },
+            {
+                "SHList": "广州无线电集团有限公司",
+                "HoldSum": 599732162.0,
+                "PCTOfTotalShares": 26.024974
+            },
+            {
+                "SHList": "芜湖铁元投资有限公司",
+                "HoldSum": 271497707.0,
+                "PCTOfTotalShares": 11.092934
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "FundManagementCompaniesCount": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT EstablishmentDate FROM AStockBasicInfoDB.LC_StockArchives WHERE CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE ChiName = '唐山港集团股份有限公司');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Listed\nFROM AStockBasicInfoDB.LC_StockArchives' at line 1\n[SQL: SELECT COUNT(*) AS NumberOfCompanies Listed\nFROM AStockBasicInfoDB.LC_StockArchives;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT COUNT(*) \nFROM AStockBasicInfoDB.LC_StockArchives\nWHERE RegArea IN (\n    SELECT AreaInnerCode \n    FROM LC_AreaCode \n    WHERE AreaName = '北京市'\n);]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockbasicinfodb.lc_mainshlistnew' doesn't exist\n[SQL: SELECT SHList AS ShareholderName, SHType AS ShareholderType, InfoPublDate AS ReportPublishDate\nFROM AStockBasicInfoDB.LC_MainSHListNew\nWHERE CompanyCode = (SELECT CompanyCode FROM AStockBasicInfoDB.SecuMain WHERE SecuAbbr = '山东药玻')\n  AND InfoTypeCode = 1\n  AND EndDate = '2019-12-31'\nORDER BY SHNo ASC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalShareholders": 53084
+            },
+            {
+                "TotalShareholders": 84535
+            },
+            {
+                "TotalShareholders": 116473
+            },
+            {
+                "TotalShareholders": 157775
+            },
+            {
+                "TotalShareholders": 8685
+            },
+            {
+                "TotalShareholders": 24269
+            },
+            {
+                "TotalShareholders": 99097
+            },
+            {
+                "TotalShareholders": 111310
+            },
+            {
+                "TotalShareholders": 14260
+            },
+            {
+                "TotalShareholders": 7797
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT `FloatShare` AS 流通股本\nFROM `上市公司股东与股本/公司治理.AStockShareholderDB.LC_ShareStru`\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxInvolvedSum": 65000000.0,
+                "TranDate": "2019-01-02 12:00:00.000"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockbasicinfodb.secumain' doesn't exist\n[SQL: SELECT SecuCode\nFROM AStockBasicInfoDB.SecuMain\nWHERE ChiName = '中南出版传媒集团股份有限公司';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'OperatingCashFlow' in 'field list'\n[SQL: SELECT OperatingCashFlow FROM AStockFinanceDB.LC_IncomeStatementAll WHERE CompanyCode = (SELECT CompanyCode FROM constantdb.SecuMain WHERE ShortName = '中南出版传媒集团股份有限公司') AND EndDate = '2019-03-31';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.secumain' doesn't exist\n[SQL: SELECT AStockMarketQuotesDB.QT_DailyQuote.InnerCode, \n       AStockMarketQuotesDB.SecuMain.SecuAbbr \nFROM AStockMarketQuotesDB.QT_DailyQuote \nJOIN AStockMarketQuotesDB.SecuMain \nON AStockMarketQuotesDB.QT_DailyQuote.InnerCode = AStockMarketQuotesDB.SecuMain.InnerCode \nWHERE AStockMarketQuotesDB.QT_DailyQuote.InnerCode = '000932';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'astockeventsdb.LC_Regroup.InfoTypeCode' in 'where clause'\n[SQL: SELECT\n    AStockEventsDB.LC_Regroup.CompanyCode,\n    AStockEventsDB.LC_Regroup.EventContent,\n    AStockEventsDB.LC_Regroup.EventProcedure,\n    AStockEventsDB.LC_Regroup.NewestAdvance,\n    AStockEventsDB.LC_Regroup.IfEnded\nFROM\n    AStockEventsDB.LC_Regroup\nWHERE\n    AStockEventsDB.LC_Regroup.CompanyCode = '000932' AND\n    AStockEventsDB.LC_Regroup.InfoTypeCode IN (4, 5, 6, 81) AND\n    AStockEventsDB.LC_Regroup.EventProcedure IN (1004, 1013, 1022) AND\n    AStockEventsDB.LC_Regroup.IfEnded = 1\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalSharesOffered": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalRDInput": 89061782.18
+            },
+            {
+                "TotalRDInput": 65037854.27
+            },
+            {
+                "TotalRDInput": 381167894.88
+            },
+            {
+                "TotalRDInput": 151093018.79
+            },
+            {
+                "TotalRDInput": 6841800.0
+            },
+            {
+                "TotalRDInput": 12524600.0
+            },
+            {
+                "TotalRDInput": 160763588.14
+            },
+            {
+                "TotalRDInput": 137956029.94
+            },
+            {
+                "TotalRDInput": 244172667.38
+            },
+            {
+                "TotalRDInput": 196539539.29
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT SecretaryBD FROM AStockBasicInfoDB.LC_StockArchives WHERE CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE ChiName = 'Titan Wind Energy (Suzhou) Co.,Ltd.');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxRepurchaseAmount": 380000000.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockfinancedb.lc_buyback' doesn't exist\n[SQL: SELECT `ValueCeiling` \nFROM `AStockFinanceDB`.`LC_Buyback` \nWHERE `FirstPublDate` LIKE '2020%' \nORDER BY `ValueCeiling` DESC \nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfCompanies": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxGuaranteeAmount": 101679000000.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "DisputeCount": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalFundsManaged": 6
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "LargestFundSize": 26966572487.54
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Manager": "王紫菡 ",
+                "LegalRepr": "经雷"
+            },
+            {
+                "Manager": "王紫菡 ",
+                "LegalRepr": "经雷"
+            },
+            {
+                "Manager": "李秋实 何平 ",
+                "LegalRepr": "江向阳"
+            },
+            {
+                "Manager": "王园园 ",
+                "LegalRepr": "裴长江"
+            },
+            {
+                "Manager": "许炎 ",
+                "LegalRepr": "裴长江"
+            },
+            {
+                "Manager": "张波 刘爱民 ",
+                "LegalRepr": "裴长江"
+            },
+            {
+                "Manager": "余海燕 潘令旦 ",
+                "LegalRepr": "刘晓艳"
+            },
+            {
+                "Manager": "余海燕 潘令旦 ",
+                "LegalRepr": "刘晓艳"
+            },
+            {
+                "Manager": "刘明宇 ",
+                "LegalRepr": "张佑君"
+            },
+            {
+                "Manager": "刘明宇 ",
+                "LegalRepr": "张佑君"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'PartyName' in 'where clause'\n[SQL: SELECT COUNT(DISTINCT CompanyCode) AS NumberOfCompanies\nFROM AStockShareholderDB.LC_ShareStru\nWHERE PartyName = '特定股东名称';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "CompanyCode": 73284,
+                "TotalLoanAmount": 532517200000.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "SuspendDate": "2021-12-23 12:00:00.000"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "IfHighestHPriceRW": 2
+            },
+            {
+                "IfHighestHPriceRW": 2
+            },
+            {
+                "IfHighestHPriceRW": 2
+            },
+            {
+                "IfHighestHPriceRW": 2
+            },
+            {
+                "IfHighestHPriceRW": 1
+            },
+            {
+                "IfHighestHPriceRW": 1
+            },
+            {
+                "IfHighestHPriceRW": 2
+            },
+            {
+                "IfHighestHPriceRW": 2
+            },
+            {
+                "IfHighestHPriceRW": 2
+            },
+            {
+                "IfHighestHPriceRW": 2
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            },
+            {
+                "HighAdjustedPriceDate": "2020-07-28 12:00:00.000"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "COUNT(*)": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1247 (42S22): Reference 'FOREIGNShareholdingRatio' not supported (forward reference in item list)\n[SQL: SELECT \n    AStockMarketQuotesDB.QT_DailyQuote.InnerCode,\n    (SELECT FOREIGNShareholdingRatio FROM constantdb.secumain WHERE secumain.InnerCode = AStockMarketQuotesDB.QT_DailyQuote.InnerCode) AS FOREIGNShareholdingRatio\nFROM \n    AStockMarketQuotesDB.QT_DailyQuote\nWHERE \n    TradingDay = CURRENT_DATE();]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Total_Issue_Vol": 59098493714.0
+            },
+            {
+                "Total_Issue_Vol": null
+            }
+        ],
+        "count": 2
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockeventsdb.lc_smattendinfo' doesn't exist\n[SQL: SELECT COUNT(*) AS CompanyCount\nFROM AStockEventsDB.LC_SMAttendInfo\nWHERE MeetingType = 1\nAND Year = 2020\nAND TestmonyLawOffice = '北京国枫律师事务所';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockshareholderdb.secumain' doesn't exist\n[SQL: SELECT AStockShareholderDB.LC_SMAttendInfo.CompanyCode\nFROM AStockShareholderDB.LC_SMAttendInfo\nJOIN AStockShareholderDB.SecuMain ON AStockShareholderDB.LC_SMAttendInfo.CompanyCode = AStockShareholderDB.SecuMain.CompanyCode\nWHERE EXISTS (\n    SELECT 1\n    FROM AStockShareholderDB.LC_ShareholderReduction\n    WHERE AStockShareholderDB.LC_ShareholderReduction.CompanyCode = AStockShareholderDB.LC_SMAttendInfo.CompanyCode\n    AND AStockShareholderDB.LC_ShareholderReduction.Year = AStockShareholderDB.LC_SMAttendInfo.Year\n);]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT\n    AStockSecuMain.CompanyName,\n    ROUND((MAX(AStockMarketQuotesDB.ClosePrice) - MIN(AStockMarketQuotesDB.ClosePrice)) / MIN(AStockMarketQuotesDB.ClosePrice), 4) AS GrowthRate\nFROM\n    AStockMarketQuotesDB\nINNER JOIN\n    AStockSecuMain ON AStockMarketQuotesDB.InnerCode = AStockSecuMain.InnerCode\nWHERE\n    AStockMarketQuotesDB.TradingDay BETWEEN '2020-01-01' AND '2020-12-31'\nGROUP BY\n    AStockSecuMain.CompanyName\nORDER BY\n    GrowthRate DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "AverageTurnoverValue": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.secumain' doesn't exist\n[SQL: SELECT COUNT(*) AS NumberOfCompanies\nFROM AStockMarketQuotesDB.CS_StockCapFlowIndex AS SCFI\nJOIN AStockMarketQuotesDB.SecuMain AS SM ON SCFI.InnerCode = SM.InnerCode\nWHERE SCFI.MainNetBuyValue > (\n    SELECT MainNetBuyValue\n    FROM AStockMarketQuotesDB.CS_StockCapFlowIndex\n    WHERE InnerCode = (\n        SELECT InnerCode\n        FROM AStockMarketQuotesDB.SecuMain\n        WHERE ChiName = '该公司名称'\n    )\n)]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "EffectiveDate": "2021-06-30 12:00:00.000",
+                "ChangeAmount": 34722.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'aiao.InvestAdvisorCode' in 'on clause'\n[SQL: SELECT COUNT(*) as TotalFundsManaged\nFROM PublicFundDB.MF_FundArchives AS fa\nJOIN PublicFundDB.MF_InvestAdvisorOutline ASiao ON fa.InvestAdvisorCode = aiao.InvestAdvisorCode;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "SecurityCode": "159972",
+                "Manager": "叶朝明 张羊城 ",
+                "MaxDividendBeforeTax": 2.2
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "EngNameAbbr": "JD.com, Inc."
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxDailyGrowth": 51.3
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT `ContactTel` FROM `AStockBasicInfoDB.LC_StockArchives`;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "EstablishmentDate": "1995-10-05 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "1999-12-21 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "1999-08-25 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "2005-01-18 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "2005-04-04 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "2003-07-15 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "2002-02-05 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "2005-02-06 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "1998-11-03 12:00:00.000"
+            },
+            {
+                "EstablishmentDate": "2000-09-08 12:00:00.000"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT AShareAbbr, AStockCode, BriefIntroText, EstablishmentDate\nFROM AStockBasicInfoDB.LC_StockArchives\nWHERE CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE AStockCode = 'XXXX') AND XGRQ = '2020-09-18';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfCompanies": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'AStockAbbr' in 'field list'\n[SQL: SELECT AStockAbbr, MAX(ListedDate) AS LatestListedDate\nFROM AStockBasicInfoDB.LC_StockArchives\nWHERE ListedDate IS NOT NULL\nGROUP BY AStockAbbr\nORDER BY LatestListedDate DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT COUNT(*) \nFROM AStockBasicInfoDB.LC_StockArchives\nJOIN SecuMain ON AStockBasicInfoDB.LC_StockArchives.CompanyCode = SecuMain.CompanyCode\nWHERE DATE(SecuMain.ListingDate) = CURRENT_DATE AND SecuMain.EndPrice > SecuMain.StartPrice;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "ListedYears": 29
+            },
+            {
+                "ListedYears": 25
+            },
+            {
+                "ListedYears": 25
+            },
+            {
+                "ListedYears": 19
+            },
+            {
+                "ListedYears": 19
+            },
+            {
+                "ListedYears": 21
+            },
+            {
+                "ListedYears": 22
+            },
+            {
+                "ListedYears": 19
+            },
+            {
+                "ListedYears": 26
+            },
+            {
+                "ListedYears": 24
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalListedCompanies": 462
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.qt_suspendresumption' doesn't exist\n[SQL: SELECT\n    SM.SecuCode,\n    SM.SecuAbbr,\n    SM.ListStatus\nFROM\n    AStockMarketQuotesDB.QT_SuspendResumption SR\nJOIN\n    AStockEventsDB.LC_Warrant W\nON\n    SR.CompanyCode = W.CompanyCode\nJOIN\n    constantdb.SecuMain SM\nON\n    SR.CompanyCode = SM.CompanyCode\nWHERE\n    SR.SuspendReason = '退市'\nAND\n    W.EventProcedure = '1001'\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxClosePrice": 322.22
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "CompaniesDelistedToday": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "InnerCode": 319857,
+                "MaxDividendAfterTax": 0.979
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "InfoSource": "二O一九年第一次收益分配公告"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'CompanyName' in 'where clause'\n[SQL: SELECT COUNT(*) \nFROM PublicFundDB.MF_FundArchives \nWHERE EstablishmentDate >= '2019-01-01' AND EstablishmentDate <= '2019-12-31' AND InvestAdvisorCode IN (\n    SELECT InvestAdvisorCode \n    FROM PublicFundDB.MF_InvestAdvisorOutline \n    WHERE CompanyName = '易方达基金管理有限公司'\n);]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1142 (42000): SELECT command denied to user 'readonly_user'@'10.50.152.136' for table 'mf_fundsize'\n[SQL: SELECT `MF_FundSize`.`FundName`, `MF_FundSize`.`EstablishmentDate`, `MF_FundSize`.`FundScale`\nFROM `EfundDB`.`MF_FundSize`\nORDER BY `MF_FundSize`.`FundScale` DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "LastDividendRatio": 2.2
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "FundCount": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT `SecuCode`, MAX(`FoundedSize`) AS `MaxSize` \nFROM `NFundDB.MF_FundArchives`\nGROUP BY `SecuCode`\nORDER BY `MaxSize` DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT \n    MF_FundArchives.InnerCode,\n    MF_Dividend.DividendRatioBeforeTax\nFROM \n    MF_FundArchives\nJOIN \n    MF_Dividend ON MF_FundArchives.InnerCode = MF_Dividend.InnerCode\nWHERE \n    MF_FundArchives.InnerCode = '南方基金管理股份有限公司基金代码' -- 请替换为实际的基金代码\nORDER BY \n    MF_Dividend.EndDate DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "IndexCount": 2
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'LC_IndexBasicInfo.IndexInnerCode' in 'on clause'\n[SQL: SELECT COUNT(DISTINCT LC_IndexComponent.SecuInnerCode) AS CompanyCount\nFROM IndexDB.LC_IndexBasicInfo\nJOIN IndexDB.LC_IndexComponent ON LC_IndexBasicInfo.IndexInnerCode = LC_IndexComponent.IndexInnerCode\nWHERE LC_IndexComponent.Flag = 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfCompanies": 645
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT LegalRepr FROM AStockBasicInfoDB.LC_StockArchives WHERE CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE ChiName = '铜陵有色金属集团股份有限公司');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT GeneralManager FROM AStockBasicInfoDB.LC_StockArchives WHERE CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE ChiName = '铜陵有色金属集团股份有限公司');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockeventsdb.lc_companywebsite' doesn't exist\n[SQL: SELECT website_url FROM AStockEventsDB.LC_CompanyWebsite LIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NonPublicIssuanceCount": 169
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockeventsdb.lc_ashareseasonednewissue' doesn't exist\n[SQL: SELECT IssueVol \nFROM AStockEventsDB.LC_AShareSeasonedNewIssue\nWHERE IssueType = 21 AND IfEffected = 1\nORDER BY InitialInfoPublDate DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockbasicinfodb.secumain' doesn't exist\n[SQL: SELECT \n    AStockBasicInfoDB.LC_StockArchives.State \nFROM \n    AStockBasicInfoDB.LC_StockArchives \nWHERE \n    AStockBasicInfoDB.LC_StockArchives.CompanyCode = (SELECT CompanyCode FROM AStockBasicInfoDB.SecuMain WHERE ChiName = '福建坤彩材料科技股份有限公司');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "COUNT(*)": 102015
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'SecuMainID' in 'where clause'\n[SQL: SELECT MAX(ReceptionDate) AS LatestReceptionDate FROM AStockEventsDB.LC_InvestorRa WHERE InnerCode = (SELECT InnerCode FROM constantdb.secumain WHERE SecuMainID = '申能股份');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Place": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfCompletedPlans": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: Commands out of sync; you can't run this command now"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT \n    ESOP.PlanName,\n    ESOP.Process,\n    ESOP.IfPeriod,\n    ESOPSummary.Statement\nFROM \n    AStockShareholderDB.LC_ESOP AS ESOP\nJOIN \n    AStockShareholderDB.LC_ESOPSummary AS ESOPSummary ON ESOP.InnerCode = ESOPSummary.InnerCode\nWHERE \n    ESOP.IfPeriod IN (SELECT DM FROM CT_SystemConst WHERE LB = 999 AND DM IN (1,2))\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "AnnualizedSharpeRatio": 2.1,
+                "DailyVolatility": 0.04
+            },
+            {
+                "AnnualizedSharpeRatio": -0.27,
+                "DailyVolatility": 0.03
+            },
+            {
+                "AnnualizedSharpeRatio": 1.34,
+                "DailyVolatility": 0.04
+            },
+            {
+                "AnnualizedSharpeRatio": -0.47,
+                "DailyVolatility": 0.03
+            },
+            {
+                "AnnualizedSharpeRatio": -0.93,
+                "DailyVolatility": 0.03
+            },
+            {
+                "AnnualizedSharpeRatio": -0.4,
+                "DailyVolatility": 0.03
+            },
+            {
+                "AnnualizedSharpeRatio": -0.39,
+                "DailyVolatility": 0.03
+            },
+            {
+                "AnnualizedSharpeRatio": 1.69,
+                "DailyVolatility": 0.04
+            },
+            {
+                "AnnualizedSharpeRatio": 1.06,
+                "DailyVolatility": 0.04
+            },
+            {
+                "AnnualizedSharpeRatio": 1.3,
+                "DailyVolatility": 0.04
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'SecuName' in 'where clause'\n[SQL: SELECT SUM(TurnoverValue) / 10000 AS TotalTurnoverValue\nFROM AStockMarketQuotesDB.QT_DailyQuote\nWHERE InnerCode = (SELECT InnerCode FROM constantdb.secumain WHERE SecuName = '上海建工')\n  AND TradingDay BETWEEN '2021-06-10' AND '2021-06-17';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1055 (42000): Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'astockmarketquotesdb.QT_StockPerformance.TurnoverValueRM' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT TurnoverValueRM AS \"近一个月的成交金额(万元)\"\nFROM AStockMarketQuotesDB.QT_StockPerformance\nWHERE TradingDay >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH)\nGROUP BY InnerCode;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT \n    ROUND(AvgPriceTW, 2) AS AvgPriceTW,\n    ROUND(AvgPriceRM, 2) AS AvgPriceRM,\n    CASE \n        WHEN AvgPriceTW > AvgPriceRM THEN '近一周的成交均价高于月成交均价'\n        WHEN AvgPriceTW < AvgPriceRM THEN '近一周的成交均价低于月成交均价'\n        ELSE '近一周的成交均价与月成交均价相等'\n    END AS Comparison\nFROM \n    AStockMarketQuotesDB.QT_StockPerformance\nWHERE \n    InnerCode = (SELECT InnerCode FROM SecuMain WHERE Symbol = '上海建工');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalStateShares": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TradingDate": "2021-12-31 12:00:00.000"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.qt_tradingdaynew' doesn't exist\n[SQL: SELECT \n    AStockMarketQuotesDB.QT_DailyQuote.TurnoverValue \nFROM \n    AStockMarketQuotesDB.QT_DailyQuote \nINNER JOIN \n    AStockMarketQuotesDB.QT_TradingDayNew \nON \n    AStockMarketQuotesDB.QT_DailyQuote.TradingDay = AStockMarketQuotesDB.QT_TradingDayNew.TradingDate \nWHERE \n    AStockMarketQuotesDB.QT_TradingDayNew.IfYearEnd = 1 \nAND \n    AStockMarketQuotesDB.QT_DailyQuote.InnerCode = (SELECT InnerCode FROM AStockMarketQuotesDB.SecuMain WHERE SecuMain.SecuName = '鱼跃医疗') \nAND \n    EXTRACT(YEAR FROM AStockMarketQuotesDB.QT_DailyQuote.TradingDay) = 2020;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'TradeAmount' in 'field list'\n[SQL: SELECT SUM(TradeAmount) AS TotalTradeAmount\nFROM ConstantDB.QT_TradingDayNew\nWHERE TradingDate BETWEEN '2020-01-01' AND '2020-12-31'\n  AND IfTradingDay = 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "RatioValue": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "COUNT(*)": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.qt_turnovervoltecindex' doesn't exist\n[SQL: SELECT \n    `交易日`\nFROM \n    AStockMarketQuotesDB.QT_TurnoverVolTecIndex\nWHERE \n    `成交量` = (\n        SELECT MAX(`成交量`)\n        FROM AStockMarketQuotesDB.QT_TurnoverVolTecIndex\n        WHERE `交易日` BETWEEN '2019-07-01' AND '2019-12-31'\n        GROUP BY `交易日`\n        HAVING COUNT(DISTINCT `证券编号`) = (\n            SELECT MAX(counts)\n            FROM (\n                SELECT COUNT(DISTINCT `证券编号`) AS counts\n                FROM AStockMarketQuotesDB.QT_TurnoverVolTecIndex\n                WHERE `交易日` BETWEEN '2019-07-01' AND '2019-09-30'\n                GROUP BY `交易日`\n            ) AS subquery\n        )\n    )\nGROUP BY `交易日`\nORDER BY COUNT(DISTINCT `证券编号`) DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.DatabaseError) 3024 (HY000): Query execution was interrupted, maximum statement execution time exceeded\n[SQL: SELECT COUNT(DISTINCT InnerCode) AS NumberOfSecurities\nFROM (\n    SELECT InnerCode\n    FROM AStockMarketQuotesDB.QT_StockPerformance AS A\n    WHERE A.TurnoverVolume > (\n        SELECT MAX(B.TurnoverVolume)\n        FROM AStockMarketQuotesDB.QT_StockPerformance AS B\n        WHERE B.TradingDay BETWEEN DATE_SUB(A.TradingDay, INTERVAL 90 DAY) AND DATE_SUB(A.TradingDay, INTERVAL 1 DAY)\n    )\n    AND A.TradingDay BETWEEN '2019-07-01' AND '2019-12-31'\n) AS C;]\n(Background on this error at: https://sqlalche.me/e/20/4xp6)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TradingDay": "2020-07-13 12:00:00.000",
+                "RisingCount": 394,
+                "FallingCount": 26
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.DatabaseError) 3024 (HY000): Query execution was interrupted, maximum statement execution time exceeded\n[SQL: SELECT COUNT(DISTINCT InnerCode) \nFROM AStockMarketQuotesDB.CS_TurnoverVolTecIndex \nWHERE IndexCycle = 3 AND TradingDay IN (\n    SELECT TradingDay\n    FROM AStockMarketQuotesDB.CS_TurnoverVolTecIndex\n    WHERE IndexCycle = 3\n    GROUP BY TradingDay\n    HAVING MAX(AMA30) > ALL (\n        SELECT MAX(AMA30)\n        FROM AStockMarketQuotesDB.CS_TurnoverVolTecIndex\n        WHERE IndexCycle = 3\n        GROUP BY TradingDay\n        HAVING TradingDay BETWEEN DATE_SUB(CURRENT_DATE, INTERVAL 3 MONTH) AND CURRENT_DATE\n    )\n);]\n(Background on this error at: https://sqlalche.me/e/20/4xp6)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "RisingStocksCount": null,
+                "FallingStocksCount": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalFunds": 83
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT `SecuMain`.`SecuAbbr`, MAX(`MF_FundArchives`.`FoundedSize`) AS `MaxFoundedSize`\nFROM `PublicFundDB`.`MF_FundArchives`\nJOIN `SecuMain` ON `MF_FundArchives`.`InnerCode` = `SecuMain`.`InnerCode`\nGROUP BY `SecuMain`.`SecuAbbr`\nORDER BY `MaxFoundedSize` DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "FundType": "债券型",
+                "FundCount": 237
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'SecuMain.ShortName' in 'field list'\n[SQL: SELECT MF_FundArchives.InnerCode, SecuMain.ShortName, MF_FundArchives.EstablishmentDate\nFROM PublicFundDB.MF_FundArchives\nJOIN constantdb.SecuMain ON MF_FundArchives.InnerCode = SecuMain.InnerCode\nWHERE MF_FundArchives.EstablishmentDate < (SELECT EstablishmentDate FROM PublicFundDB.MF_FundArchives WHERE InnerCode = '博时基金公司InnerCode')\nORDER BY MF_FundArchives.EstablishmentDate DESC;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockshareholderdb.lc_shareholdingst' doesn't exist\n[SQL: SELECT `公司简称`\nFROM AStockShareholderDB.LC_ShareHoldingSt\nWHERE `报告年份` = 2019 AND `股份性质` = '无限售流通A股'\nORDER BY `机构持股数量合计` DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalInstitutionsHoldProp": 4.52
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Top10StockholdersProp": 78.03
+            },
+            {
+                "Top10StockholdersProp": 38.04
+            },
+            {
+                "Top10StockholdersProp": 74.73
+            },
+            {
+                "Top10StockholdersProp": 68.33
+            },
+            {
+                "Top10StockholdersProp": 65.93
+            },
+            {
+                "Top10StockholdersProp": 64.79
+            },
+            {
+                "Top10StockholdersProp": 86.1
+            },
+            {
+                "Top10StockholdersProp": 75.0
+            },
+            {
+                "Top10StockholdersProp": 68.32
+            },
+            {
+                "Top10StockholdersProp": 37.39
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT SecuMain.SecuAbbr\nFROM AStockShareholderDB.LC_StockHoldingSt\nJOIN SecuMain ON LC_StockHoldingSt.InnerCode = SecuMain.InnerCode\nWHERE LC_StockHoldingSt.EndDate = '2021-12-31'\n  AND LC_StockHoldingSt.InfoSource = '基金定报'\n  AND LC_StockHoldingSt.UpdateTime IN (\n    SELECT MAX(UpdateTime)\n    FROM AStockShareholderDB.LC_StockHoldingSt\n    WHERE EndDate = '2021-12-31'\n      AND InfoSource = '基金定报'\n  )\nORDER BY LC_StockHoldingSt.InstitutionsHoldings DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Top10StockholdersProp": 78.03
+            },
+            {
+                "Top10StockholdersProp": 38.04
+            },
+            {
+                "Top10StockholdersProp": 74.73
+            },
+            {
+                "Top10StockholdersProp": 68.33
+            },
+            {
+                "Top10StockholdersProp": 65.9323
+            },
+            {
+                "Top10StockholdersProp": 64.7923
+            },
+            {
+                "Top10StockholdersProp": 86.1
+            },
+            {
+                "Top10StockholdersProp": 75.0
+            },
+            {
+                "Top10StockholdersProp": 68.32
+            },
+            {
+                "Top10StockholdersProp": 37.39
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxClosePrice": 653.6,
+                "TradingDay": "2020-08-05 12:00:00.000"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.DatabaseError) 3024 (HY000): Query execution was interrupted, maximum statement execution time exceeded\n[SQL: SELECT \n    a.TradingDay AS '当日日期',\n    a.TurnoverVolume AS '当日成交量',\n    (SELECT MAX(TurnoverVolume) FROM AStockMarketQuotesDB.QT_StockPerformance WHERE TradingDay BETWEEN DATE_SUB(a.TradingDay, INTERVAL 1 MONTH) AND a.TradingDay) AS '近一个月最高成交量'\nFROM \n    AStockMarketQuotesDB.QT_StockPerformance a\nWHERE \n    a.TurnoverVolume = (SELECT MAX(TurnoverVolume) FROM AStockMarketQuotesDB.QT_StockPerformance WHERE TradingDay BETWEEN DATE_SUB(a.TradingDay, INTERVAL 1 MONTH) AND a.TradingDay)\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/4xp6)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.secumain' doesn't exist\n[SQL: SELECT \n    COUNT(*) AS ContinuousHighVolumeDays\nFROM (\n    SELECT \n        TradingDay,\n        TurnoverVolume,\n        LAG(TurnoverVolume, 1) OVER (ORDER BY TradingDay) AS PrevDayVolume\n    FROM \n        AStockMarketQuotesDB.QT_DailyQuote\n    WHERE \n        InnerCode = (SELECT InnerCode FROM AStockMarketQuotesDB.SecuMain WHERE SecuName = '安琪酵母')\n        AND TradingDay BETWEEN '2020-01-01' AND '2020-12-31'\n) AS SubQuery\nWHERE \n    TurnoverVolume > PrevDayVolume\nGROUP BY \n    TradingDay\nHAVING \n    COUNT(*) > 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1055 (42000): Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'astockmarketquotesdb.QT_StockPerformance.TradingDay' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT MAX(ClosePrice) AS MaxClosePrice, TradingDay AS MaxClosePriceDate\nFROM AStockMarketQuotesDB.QT_StockPerformance\nWHERE YEAR(TradingDay) = 2021\nGROUP BY InnerCode\nORDER BY MaxClosePrice DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TradingDay": "2021-12-23 12:00:00.000",
+                "InnerCode": 352827,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-12-31 12:00:00.000",
+                "InnerCode": 352827,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-12-22 12:00:00.000",
+                "InnerCode": 376651,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-12-20 12:00:00.000",
+                "InnerCode": 341468,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-11-12 12:00:00.000",
+                "InnerCode": 366293,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-10-15 12:00:00.000",
+                "InnerCode": 330951,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-12-30 12:00:00.000",
+                "InnerCode": 330951,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-08-11 12:00:00.000",
+                "InnerCode": 294884,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-10-26 12:00:00.000",
+                "InnerCode": 294884,
+                "IfHighestTVolumeRM": 1
+            },
+            {
+                "TradingDay": "2021-10-28 12:00:00.000",
+                "InnerCode": 294884,
+                "IfHighestTVolumeRM": 1
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM ',', -1))) AS ContinuousVolumeDays\nFROM\n  AStockMarketQuotesDB.QT_DailyQuot' at line 3\n[SQL: SELECT\n  InnerCode,\n  MAX(LENGTH(SUBSTRING_INDEX(GROUP_CONCAT(TurnoverVolume ORDER BY TradingDay) FROM ',', -1))) AS ContinuousVolumeDays\nFROM\n  AStockMarketQuotesDB.QT_DailyQuote\nGROUP BY\n  InnerCode;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MinClosePrice": 1.29,
+                "TradingDay": "2019-01-03 12:00:00.000"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'VRSI' in 'field list'\n[SQL: SELECT ROUND(VRSI, 4) AS VRSI_4dp\nFROM AStockMarketQuotesDB.QT_DailyQuote\nWHERE InnerCode = (SELECT InnerCode FROM constantdb.secumain WHERE SecuName = '厦门钨业')\nAND TradingDay = CURRENT_DATE;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'StockName' in 'where clause'\n[SQL: SELECT COUNT(*) AS ContinuousFallDays\nFROM (\n    SELECT\n        a.TradingDay,\n        a.ClosePrice,\n        LEAD(a.ClosePrice, 1) OVER (ORDER BY a.TradingDay) AS NextClosePrice\n    FROM\n        AStockMarketQuotesDB.QT_DailyQuote a\n    INNER JOIN\n        AStockMarketQuotesDB.QT_StockPerformance b\n    ON\n        a.InnerCode = b.InnerCode\n    WHERE\n        b.InnerCode = (SELECT InnerCode FROM AStockMarketQuotesDB.QT_StockPerformance WHERE StockName = '厦门钨业')\n    ORDER BY\n        a.TradingDay\n) AS c\nWHERE\n    c.ClosePrice > c.NextClosePrice]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TradingDay": "2021-08-05 12:00:00.000",
+                "LowestClosePriceYTD": 1.29
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'VRSI' in 'field list'\n[SQL: SELECT ROUND(VRSI, 4) AS VRSI_4dp\nFROM AStockMarketQuotesDB.QT_DailyQuote\nWHERE InnerCode = (SELECT InnerCode FROM constantdb.secumain WHERE SecuName = '厦门钨业')\nAND TradingDay = CURRENT_DATE;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.secumain' doesn't exist\n[SQL: SELECT COUNT(*) AS ContinuousLossDays\nFROM AStockMarketQuotesDB.QT_DailyQuote\nWHERE InnerCode = (SELECT InnerCode FROM AStockMarketQuotesDB.SecuMain WHERE SecuAbbr = '厦门钨业')\nAND ClosePrice < PrevClosePrice\nAND TradingDay >= (SELECT MAX(TradingDay) FROM AStockMarketQuotesDB.QT_DailyQuote WHERE InnerCode = (SELECT InnerCode FROM AStockMarketQuotesDB.SecuMain WHERE SecuAbbr = '厦门钨业') AND ClosePrice >= PrevClosePrice)\nGROUP BY InnerCode;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Standard": 38,
+                "Industry": 60103315,
+                "SecondIndustryCode": "480300",
+                "SecondIndustryName": "股份制银行Ⅱ"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60103486,
+                "SecondIndustryCode": "710400",
+                "SecondIndustryName": "软件开发"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60103244,
+                "SecondIndustryCode": "450300",
+                "SecondIndustryName": "一般零售"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60103411,
+                "SecondIndustryCode": "630700",
+                "SecondIndustryName": "电池"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60103367,
+                "SecondIndustryCode": "620300",
+                "SecondIndustryName": "基础建设"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60103346,
+                "SecondIndustryCode": "610200",
+                "SecondIndustryName": "玻璃玻纤"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60102743,
+                "SecondIndustryCode": "110500",
+                "SecondIndustryName": "农产品加工"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60102942,
+                "SecondIndustryCode": "270300",
+                "SecondIndustryName": "光学光电子"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60102952,
+                "SecondIndustryCode": "270500",
+                "SecondIndustryName": "消费电子"
+            },
+            {
+                "Standard": 38,
+                "Industry": 60103210,
+                "SecondIndustryCode": "421100",
+                "SecondIndustryName": "航运港口"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "COUNT(*)": 727
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT SecondIndustryName \nFROM AStockIndustryDB.LC_ExgIndustry \nWHERE CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE ShortName = '杰瑞股份') \n  AND Standard = 38;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "StockCount": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalMarketValuePercentage": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'SecuMain.CompanyName' in 'where clause'\n[SQL: SELECT FirstIndustryName \nFROM AStockIndustryDB.LC_ExgIndustry \nWHERE CompanyCode = (SELECT CompanyCode FROM constantdb.secumain WHERE SecuMain.CompanyName = '均胜电子') \n  AND Standard = 38 \n  AND InfoPublDate <= '2021-12-31';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: Commands out of sync; you can't run this command now"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "StockMarketRatio": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NegotiableMV": 129358349179.86
+            },
+            {
+                "NegotiableMV": 51166957740.42
+            },
+            {
+                "NegotiableMV": 61598148023.7
+            },
+            {
+                "NegotiableMV": 338927651181.91
+            },
+            {
+                "NegotiableMV": 990313294956.47
+            },
+            {
+                "NegotiableMV": 44841834054.36
+            },
+            {
+                "NegotiableMV": 4567834935851.19
+            },
+            {
+                "NegotiableMV": 197560363995.47
+            },
+            {
+                "NegotiableMV": 68049489651.06
+            },
+            {
+                "NegotiableMV": 40685339589.81
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockfinancedb.lc_staff' doesn't exist\n[SQL: SELECT \n    SUM(CASE WHEN TypeCode = '1012' THEN EmployeeSum ELSE 0 END) AS TotalCompensation,\n    COUNT(DISTINCT ID) AS ManagementPersonnelCount\nFROM \n    AStockFinanceDB.LC_Staff\nWHERE \n    EndDate = '2019-12-31'\n    AND InfoSource = '软通动力'\n    AND TypeCode IN ('1012', '1014', '1016', '1018', '1099')\n    AND ClassfiedMethod = 1000;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockfinancedb.lc_rewardstat' doesn't exist\n[SQL: SELECT High3Directors FROM AStockFinanceDB.LC_RewardStat;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT InvestAdvisorName FROM PublicFundDB.MF_InvestAdvisorOutline WHERE InvestAdvisorCode = (SELECT CompanyCode FROM LC_InstiArchive WHERE FundName = '天弘增利短债C');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'publicfunddb.ct_systemconst' doesn't exist\n[SQL: SELECT \n    MF_FundArchives.Type, \n    CT_SystemConst.Description\nFROM \n    PublicFundDB.MF_FundArchives\nJOIN \n    PublicFundDB.CT_SystemConst ON MF_FundArchives.Type = CT_SystemConst.DM\nWHERE \n    CT_SystemConst.LB = 1210;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalRDInvestment": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxLoanAmount": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "Borrower": "本公司",
+                "MaxFirstLoanSum": 8000000000.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxGuaranteeAmount": 900000000.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockeventsdb.secumain' doesn't exist\n[SQL: SELECT MAX(LatestGuaranteeSum) AS MaxGuaranteeAmount, SecuredParty\nFROM AStockEventsDB.LC_Warrant\nWHERE CompanyCode = (SELECT CompanyCode FROM AStockEventsDB.SecuMain WHERE ShortName = '亿帆医药')\nAND AgreementDate BETWEEN '2020-01-01' AND '2020-12-31'\nGROUP BY SecuredParty;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'ShortName' in 'where clause'\n[SQL: SELECT COUNT(*) AS total_announcements\nFROM AStockEventsDB.LC_Warrant\nWHERE CompanyCode = (SELECT CompanyCode FROM constantdb.secumain WHERE ShortName = '许继电气')\nAND InfoPublDate BETWEEN '2021-01-01' AND '2021-12-31';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "ContractObject": "单晶方锭框架采购合同",
+                "ContractDate": "2021-12-06 12:00:00.000",
+                "AnnouncementDate": "2021-11-12 12:00:00.000"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT\n    (ReduceShareCeiling - ReduceShareFloor) AS ShareDifference\nFROM\n    AStockShareholderDB.LC_TransferPlan\nWHERE\n    CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE CompanyName = '美亚光电')\n    AND YEAR(InfoPublDate) = 2021\n    AND TransferPlanType = (SELECT DM FROM CT_SystemConst WHERE LB = 1306 AND DM IN (124,127,128,201) AND Description = '主动减持计划')\n    AND EventProcedure IN (SELECT DM FROM CT_SystemConst WHERE LB = 2380 AND DM IN (1,2,3,4,5,6))]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfShareholders": 609
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MaxReductionRatio": 0.13,
+                "SHName": "北京市海淀区国有资产投资经营有限公司"
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'ISINCode' in 'field list'\n[SQL: SELECT AStockCode, ISINCode \nFROM AStockBasicInfoDB.LC_StockArchives\nWHERE ChiName = '利亚德';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockindustrydb.lc_stockarchives' doesn't exist\n[SQL: SELECT \n    AStockIndustryDB.LC_StockArchives.InduCSRC AS LatestCSRCIndustryCode,\n    COUNT(AStockIndustryDB.LC_StockArchives.CompanyCode) AS NumberOfListedCompanies\nFROM \n    AStockIndustryDB.LC_StockArchives\nWHERE \n    AStockIndustryDB.LC_StockArchives.InduCSRC IS NOT NULL\nGROUP BY \n    AStockIndustryDB.LC_StockArchives.InduCSRC\nORDER BY \n    AStockIndustryDB.LC_StockArchives.XGRQ DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3 IR.ReceptionDate AS Date, IR.Place, COUNT(ID) AS NumberOfInstitutions\nFROM ASt' at line 1\n[SQL: SELECT TOP 3 IR.ReceptionDate AS Date, IR.Place, COUNT(ID) AS NumberOfInstitutions\nFROM AStockEventsDB.LC_InvestorRa IR\nJOIN AStockEventsDB.LC_InvestorDetail ID ON IR.ID = ID.RID\nWHERE IR.InnerCode = (SELECT CompanyCode FROM AStockIndustryDB.LC_ExgIndustry WHERE Industry = '利亚德')\nORDER BY IR.ReceptionDate DESC;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfNationalShareholdingShareholders": 0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalHoldAShareSum": 229129850423.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "SHName": "国家集成电路产业投资基金股份有限公司",
+                "HighestShareholdingRatio": 21.723203
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalEmployees": null,
+                "TechnicalPersonnel": null,
+                "TechnicalPersonnelRatio": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "MasterAndAboveDegreePercentage": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "ProductionPersonnel": 5800933,
+                "SalesPersonnel": 1799471,
+                "TechnicalPersonnel": 2301929,
+                "TotalEmployees": 9902333
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "LargeVsSmallNetBuyValueDifference": -32.68
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -40.28
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -53.35
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -29.12
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -18.06
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -6.79
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -29.03
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -30.79
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -22.61
+            },
+            {
+                "LargeVsSmallNetBuyValueDifference": -43.71
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1055 (42000): Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'astockmarketquotesdb.CS.SmallNBValueRatio' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT \n    CO.ConceptName,\n    (CASE WHEN CS.SmallNBValueRatio IS NULL THEN 0 ELSE CS.SmallNBValueRatio END) - (CASE WHEN CS.LargeNBValueRatio IS NULL THEN 0 ELSE CS.LargeNBValueRatio END) AS SmallLargeNetBuyValueDifference\nFROM \n    AStockIndustryDB.LC_COConcept CC\nJOIN \n    AStockIndustryDB.LC_ConceptList CO ON CC.ConceptCode = CO.ConceptCode\nJOIN \n    AStockMarketQuotesDB.CS_StockCapFlowIndex CS ON CC.InnerCode = CS.InnerCode\nWHERE \n    CS.TradingDay = '2021-12-24'\n    AND CC.IndiState = 1\n    AND CO.ConceptState = 1\nGROUP BY \n    CO.ConceptName;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockindustrydb.lc_business' doesn't exist\n[SQL: SELECT COUNT(*) AS ChangeCount, InfoPublDate AS ChangeDate\nFROM AStockIndustryDB.LC_Business\nWHERE YEAR(InfoPublDate) = 2020 AND IfPassed = 1\nGROUP BY InfoPublDate\nORDER BY ChangeDate;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "event_count": 4,
+                "InfoPublDate": "2020-03-10 12:00:00.000"
+            },
+            {
+                "event_count": 3,
+                "InfoPublDate": "2020-03-05 12:00:00.000"
+            },
+            {
+                "event_count": 2,
+                "InfoPublDate": "2020-03-07 12:00:00.000"
+            },
+            {
+                "event_count": 1,
+                "InfoPublDate": "2020-05-13 12:00:00.000"
+            },
+            {
+                "event_count": 1,
+                "InfoPublDate": "2019-12-20 12:00:00.000"
+            },
+            {
+                "event_count": 1,
+                "InfoPublDate": "2020-02-14 12:00:00.000"
+            },
+            {
+                "event_count": 1,
+                "InfoPublDate": "2020-02-15 12:00:00.000"
+            },
+            {
+                "event_count": 5,
+                "InfoPublDate": "2020-03-26 12:00:00.000"
+            },
+            {
+                "event_count": 3,
+                "InfoPublDate": "2020-03-13 12:00:00.000"
+            },
+            {
+                "event_count": 1,
+                "InfoPublDate": "2020-06-17 12:00:00.000"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockindustrydb.lc_business' doesn't exist\n[SQL: SELECT \n    (SELECT COUNT(*) FROM AStockIndustryDB.LC_Business WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2020) AS BusinessChanges2020,\n    (SELECT COUNT(*) FROM AStockIndustryDB.LC_Business WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2019) AS BusinessChanges2019,\n    (SELECT COUNT(*) FROM AStockEventsDB.LC_Credit WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2020) AS CreditEvents2020,\n    (SELECT COUNT(*) FROM AStockEventsDB.LC_Credit WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2019) AS CreditEvents2019,\n    ((SELECT COUNT(*) FROM AStockIndustryDB.LC_Business WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2020) - (SELECT COUNT(*) FROM AStockIndustryDB.LC_Business WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2019)) / (SELECT COUNT(*) FROM AStockIndustryDB.LC_Business WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2019) * 100 AS BusinessChangeRate,\n    ((SELECT COUNT(*) FROM AStockEventsDB.LC_Credit WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2020) - (SELECT COUNT(*) FROM AStockEventsDB.LC_Credit WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2019)) / (SELECT COUNT(*) FROM AStockEventsDB.LC_Credit WHERE CompanyCode = '永泰能源' AND YEAR(InfoPublDate) = 2019) * 100 AS CreditEventRate]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfFunds": 0,
+                "TotalSize": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "NumberOfStockFunds": 110,
+                "AverageFoundingSize": 3681000618.137142
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "PassiveInvestmentCount": 28,
+                "TotalFundCount": 28,
+                "PassiveInvestmentPercentage": 100.0
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'A.SHSNum' in 'field list'\n[SQL: SELECT \n    A.SHSNum AS TotalShareholders,\n    A.AAverageHoldSum AS AShareholdersAverageHoldings\nFROM \n    AStockShareholderDB.LC_SHNumber AS A\nWHERE \n    A.CompanyCode = (SELECT CompanyCode FROM AStockShareholderDB.LC_SHNumber WHERE CompanyCode LIKE '%安琪酵母%' LIMIT 1)\n    AND A.EndDate = '2021-12-31';]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockshareholderdb.managementsalary' doesn't exist\n[SQL: SELECT \n    SUM(ManagementSalary) AS TotalManagementSalary,\n    AVG(ManagementSalary) AS AverageManagementSalary\nFROM \n    AStockShareholderDB.ManagementSalary\nWHERE \n    Year = 2021;\n\nSELECT \n    (SELECT SUM(ManagementSalary) FROM AStockShareholderDB.ManagementSalary WHERE Year = 2021) / AVG(ManagementSalary) OVER() - 1 AS DifferenceRate\nFROM \n    AStockShareholderDB.ManagementSalary\nWHERE \n    Year = 2021;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'BuybackID' in 'group statement'\n[SQL: SELECT \n    COUNT(*) AS TotalBuybacks,\n    ROUND(SUM(BuybackMoney) / 10000, 2) AS TotalAmount,\n    BuybackSum AS Shares\nFROM \n    AStockShareholderDB.LC_Buyback\nWHERE \n    CompanyCode = '健康元药业集团股份有限公司' AND\n    StartDate BETWEEN '2020-01-01' AND '2021-12-31'\nGROUP BY \n    BuybackID]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT\n    A.ID,\n    A.FirstPublDate,\n    A.BuybackSum,\n    A.BuybackMoney,\n    A.BuybackPurpose,\n    A.PurposeDesc\nFROM\n    AStockShareholderDB.LC_Buyback AS A\nJOIN\n    AStockShareholderDB.LC_BuybackAttach AS B ON A.ID = B.BuybackID\nWHERE\n    A.CompanyCode = '健康元药业集团股份有限公司' AND\n    A.BuybackPurpose = (SELECT DM FROM CT_SystemConst WHERE LB = 2560 AND DM IN ('1', '2', '3')) AND\n    A.EventProcedure = (SELECT DM FROM CT_SystemConst WHERE LB = 1059 AND DM = '1022')\nORDER BY\n    A.FirstPublDate DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Rank\nFROM \n    AStockShareholderDB.LC_Buyback\nWHERE \n    LC_Buyback.FirstPublDat' at line 4\n[SQL: SELECT \n    LC_Buyback.CompanyCode,\n    LC_Buyback.BuybackMoney,\n    RANK() OVER (ORDER BY LC_Buyback.BuybackMoney DESC) AS Rank\nFROM \n    AStockShareholderDB.LC_Buyback\nWHERE \n    LC_Buyback.FirstPublDate BETWEEN '2020-01-01' AND '2021-12-31']\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "ShareSource": "定向受让",
+                "ShareCelling": 3400000.0
+            },
+            {
+                "ShareSource": "二级市场购买",
+                "ShareCelling": 26212300.0
+            },
+            {
+                "ShareSource": "二级市场购买",
+                "ShareCelling": null
+            },
+            {
+                "ShareSource": "回购股票",
+                "ShareCelling": 8510084.0
+            },
+            {
+                "ShareSource": "受让股份",
+                "ShareCelling": 32664016.0
+            },
+            {
+                "ShareSource": "二级市场购买",
+                "ShareCelling": 62000000.0
+            },
+            {
+                "ShareSource": "本员工持股计划的股票来源为公司回购专用账户回购的股份。",
+                "ShareCelling": 331036205.0
+            },
+            {
+                "ShareSource": "二级市场购买",
+                "ShareCelling": 1062300.0
+            },
+            {
+                "ShareSource": "回购股票",
+                "ShareCelling": 1401119.0
+            },
+            {
+                "ShareSource": "回购股票",
+                "ShareCelling": 1280600.0
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'astockshareholderdb.LC_ESOP.SecuCode' in 'where clause'\n[SQL: SELECT \n    COUNT(*) AS NumberOfESOPs,\n    ROUND(AVG(ShareCelling) / (SELECT MAX(ShareCelling) FROM AStockShareholderDB.LC_ESOPSummary) * 100, 2) AS SharePlanScale,\n    ROUND(AVG(ManagementPartiAmount) / (SELECT MAX(ManagementPartiAmount) FROM AStockShareholderDB.LC_ESOP) * 100, 2) AS ManagementParticipationRate,\n    ROUND(AVG(LockDuration) / (SELECT MAX(LockDuration) FROM AStockShareholderDB.LC_ESOP) * 100, 2) AS LockDurationRate\nFROM \n    AStockShareholderDB.LC_ESOP\nWHERE \n    CompanyCode = (SELECT CompanyCode FROM AStockShareholderDB.LC_MainSHListNew WHERE SHList = '伟明环保')\n    AND EXISTS (\n        SELECT 1 FROM AStockShareholderDB.LC_MainSHListNew AS MS WHERE \n        MS.SecuCode = AStockShareholderDB.LC_ESOP.SecuCode\n        AND MS.SHKind = '证券市场和证券类别相同'\n    )]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'InstitutionsHoldPropB' in 'field list'\n[SQL: SELECT\n    ROUND(InstitutionsHoldProp, 2) AS '第一季度末机构持股比例(%)',\n    ROUND(InstitutionsHoldPropA, 2) AS '第二季度末机构持股比例(%)',\n    ROUND(InstitutionsHoldPropB, 2) AS '第三季度末机构持股比例(%)',\n    ROUND(InstitutionsHoldPropC, 2) AS '第四季度末机构持股比例(%)'\nFROM\n    AStockShareholderDB.LC_StockHoldingSt\nWHERE\n    CompanyCode = '300383'\n    AND InfoSource != '基金定报'\n    AND (StatDate BETWEEN '2021-03-31' AND '2021-12-31')\nORDER BY\n    StatDate]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'InstitutionsHoldProp_2021' in 'field list'\n[SQL: SELECT \n    ROUND(InstitutionsHoldProp, 2) AS InstitutionsHoldProp_2020,\n    ROUND(InstitutionsHoldPropA, 2) AS InstitutionsHoldPropA_2020,\n    ROUND(InstitutionsHoldPropT, 2) AS InstitutionsHoldPropT_2020,\n    ROUND(InstitutionsHoldProp, 2) AS InstitutionsHoldProp_2021,\n    ROUND(InstitutionsHoldPropA, 2) AS InstitutionsHoldPropA_2021,\n    ROUND(InstitutionsHoldPropT, 2) AS InstitutionsHoldPropT_2021,\n    ROUND((InstitutionsHoldProp_2021 - InstitutionsHoldProp_2020) * 100, 2) AS ChangeInstitutionsHoldProp,\n    ROUND((InstitutionsHoldPropA_2021 - InstitutionsHoldPropA_2020) * 100, 2) AS ChangeInstitutionsHoldPropA,\n    ROUND((InstitutionsHoldPropT_2021 - InstitutionsHoldPropT_2020) * 100, 2) AS ChangeInstitutionsHoldPropT,\n    ROUND(FundsHoldProp, 2) AS FundsHoldProp_2020,\n    ROUND(FundsHoldPropA, 2) AS FundsHoldPropA_2020,\n    ROUND(FundsHoldPropT, 2) AS FundsHoldPropT_2020,\n    ROUND(FundsHoldProp, 2) AS FundsHoldProp_2021,\n    ROUND(FundsHoldPropA, 2) AS FundsHoldPropA_2021,\n    ROUND(FundsHoldPropT, 2) AS FundsHoldPropT_2021,\n    ROUND((FundsHoldProp_2021 - FundsHoldProp_2020) * 100, 2) AS ChangeFundsHoldProp,\n    ROUND((FundsHoldPropA_2021 - FundsHoldPropA_2020) * 100, 2) AS ChangeFundsHoldPropA,\n    ROUND((FundsHoldPropT_2021 - FundsHoldPropT_2020) * 100, 2) AS ChangeFundsHoldPropT\nFROM \n    AStockShareholderDB.LC_StockHoldingSt\nWHERE \n    EndDate = '2020-12-31' OR EndDate = '2021-12-31'\nGROUP BY \n    EndDate]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1140 (42000): In aggregated query without GROUP BY, expression #3 of SELECT list contains nonaggregated column 'astockfinancedb.LC_Dividend.DividendImplementDate'; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT COUNT(*) AS DividendCount,\n       ROUND(SUM(CashDiviRMB), 2) AS TotalDividendAmount,\n       DividendImplementDate\nFROM AStockFinanceDB.LC_Dividend\nWHERE IfDividend = 1\n      AND AdvanceDate BETWEEN '2020-01-01' AND '2021-12-31'\n      AND DividendImplementDate IS NOT NULL;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "IsIncreased": "是",
+                "MaxProp": 93.3228,
+                "MinProp": 0.1821
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 1600000000.0,
+                "BorrowerName": "本公司",
+                "LenderName": "中国进出口银行安徽省分行"
+            },
+            {
+                "TotalMajorLoans": 2,
+                "MaxLoanAmount": 50000000.0,
+                "BorrowerName": "邛崃天银制药有限公司",
+                "LenderName": "中国建设银行股份有限公司邛崃支行"
+            },
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 85000000.0,
+                "BorrowerName": "吉林天成制药有限公司",
+                "LenderName": "交通银行股份有限公司吉林省分行"
+            },
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 85000000.0,
+                "BorrowerName": "通化谷红制药有限公司",
+                "LenderName": "交通银行股份有限公司吉林省分行"
+            },
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 50000000.0,
+                "BorrowerName": "辽宁奥达制药有限公司",
+                "LenderName": "中国建设银行股份有限公司营口分行"
+            },
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 50000000.0,
+                "BorrowerName": "邛崃天银制药有限公司",
+                "LenderName": "中信银行股份有限公司成都分行"
+            },
+            {
+                "TotalMajorLoans": 2,
+                "MaxLoanAmount": 3000000000.0,
+                "BorrowerName": "本公司",
+                "LenderName": "中国建设银行股份有限公司招远支行等"
+            },
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 100000000.0,
+                "BorrowerName": "陕西步长制药有限公司",
+                "LenderName": "北京银行股份有限公司西安分行"
+            },
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 87000000.0,
+                "BorrowerName": "北京东华合创香港有限公司",
+                "LenderName": "浙商银行股份有限公司北京分行"
+            },
+            {
+                "TotalMajorLoans": 1,
+                "MaxLoanAmount": 100000000.0,
+                "BorrowerName": "双环传动(嘉兴)精密制造有限公司",
+                "LenderName": "中国银行股份有限公司桐乡支行"
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockmarketquotesdb.secumain' doesn't exist\n[SQL: SELECT \n    AStockMarketQuotesDB.SecuMain.SecuAbbr AS CompanyAbbreviation, \n    AStockMarketQuotesDB.SecuMain.SecuCode AS StockCode\nFROM \n    AStockMarketQuotesDB.QT_StockPerformance\nJOIN \n    AStockMarketQuotesDB.SecuMain ON AStockMarketQuotesDB.QT_StockPerformance.InnerCode = AStockMarketQuotesDB.SecuMain.InnerCode\nWHERE \n    AStockMarketQuotesDB.QT_StockPerformance.TradingDay = '2021-12-31'\n    AND AStockMarketQuotesDB.QT_StockPerformance.HighestClosePriceRM > (\n        SELECT MAX(HighestClosePriceRM)\n        FROM AStockMarketQuotesDB.QT_StockPerformance\n        WHERE TradingDay BETWEEN '2021-12-01' AND '2021-12-31'\n        AND InnerCode = AStockMarketQuotesDB.QT_StockPerformance.InnerCode\n    )]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'astockmarketquotesdb.QT_StockPerformance.SecuAbbr' in 'field list'\n[SQL: SELECT \n    AStockMarketQuotesDB.QT_StockPerformance.SecuAbbr AS CompanyName,\n    AStockShareholderDB.LC_MainSHListNew.SHList AS EnterpriseCapitalShareholder\nFROM \n    AStockMarketQuotesDB.QT_StockPerformance\nJOIN \n    AStockShareholderDB.LC_MainSHListNew ON AStockMarketQuotesDB.QT_StockPerformance.InnerCode = AStockShareholderDB.LC_MainSHListNew.SecuInnerCode\nJOIN \n    AStockShareholderDB.LC_SHTypeClassifi ON AStockShareholderDB.LC_MainSHListNew.SHID = AStockShareholderDB.LC_SHTypeClassifi.SHID\nWHERE \n    AStockMarketQuotesDB.QT_StockPerformance.HighPriceRM = (SELECT MAX(HighPriceRM) FROM AStockMarketQuotesDB.QT_StockPerformance)\n    AND AStockShareholderDB.LC_SHTypeClassifi.SHAttribute = 2\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'SecuMain.AbbName' in 'field list'\n[SQL: SELECT \n    LC_ExgIndustry.FirstIndustryCode AS '行业代码',\n    SecuMain.AbbName AS '公司简称',\n    LC_SHTypeClassifi.SHName AS '企业资本股东名称'\nFROM \n    AStockMarketQuotesDB.QT_StockPerformance AS QT_StockPerformance\nINNER JOIN \n    AStockIndustryDB.LC_ExgIndustry AS LC_ExgIndustry ON QT_StockPerformance.InnerCode = LC_ExgIndustry.CompanyCode\nINNER JOIN \n    AStockShareholderDB.LC_SHTypeClassifi AS LC_SHTypeClassifi ON QT_StockPerformance.InnerCode = LC_SHTypeClassifi.SHCode\nINNER JOIN \n    constantdb.SecuMain AS SecuMain ON QT_StockPerformance.InnerCode = SecuMain.InnerCode\nWHERE \n    QT_StockPerformance.TradingDay = '2021-12-31' AND\n    QT_StockPerformance.HighPriceTM = QT_StockPerformance.HighestClosePriceTM AND\n    LC_SHTypeClassifi.FirstLvCode = '2000000' AND\n    LC_SHTypeClassifi.SecondLvCode = '2010000' AND\n    LC_SHTypeClassifi.ThirdLvCode = '2010100'\nGROUP BY \n    LC_ExgIndustry.FirstIndustryCode, \n    SecuMain.AbbName, \n    LC_SHTypeClassifi.SHName\nORDER BY \n    LC_ExgIndustry.FirstIndustryCode, \n    SecuMain.AbbName\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockfinancedb.secumain' doesn't exist\n[SQL: SELECT COUNT(*) AS DividendCount, CashDiviRMB / DiviBase AS DividendRatio\nFROM AStockFinanceDB.LC_Dividend\nWHERE InnerCode = (SELECT InnerCode FROM AStockFinanceDB.SecuMain WHERE SecuName = '华夏鼎康债券A')\n  AND YEAR(EndDate) = 2019\n  AND IfDividend = 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockfinancedb.ct_systemconst' doesn't exist\n[SQL: SELECT \n    AVG(DistributeTimes) AS AvgDividendTimes,\n    ROUND(AVG(CashDiviRMB / DiviBase), 4) AS AvgDividendRatio\nFROM \n    AStockFinanceDB.LC_Dividend\nWHERE \n    EndDate BETWEEN '2019-01-01' AND '2019-12-31'\n    AND DiviObject = 1 -- Assuming we are only interested in dividends for all shareholders\n    AND IfDividend = 1 -- Only consider records where a dividend was actually distributed\n    AND InnerCode IN (\n        SELECT \n            InnerCode\n        FROM \n            AStockFinanceDB.LC_Dividend\n        WHERE \n            EndDate BETWEEN '2019-01-01' AND '2019-12-31'\n            AND DiviObject = 1\n            AND IfDividend = 1\n            AND SchemeType IN (\n                SELECT \n                    DM\n                FROM \n                    AStockFinanceDB.CT_SystemConst\n                WHERE \n                    LB = 1739\n                    AND DM = 10 -- Assuming we are only considering dividends proposed by the company\n            )\n    );]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "季度": "第二季度",
+                "合同数量": 5
+            },
+            {
+                "季度": "第三季度",
+                "合同数量": 3
+            }
+        ],
+        "count": 2
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM \n    AStockEventsDB.LC_MajorContract\nWHERE \n    AgreementDate BETWEEN '2021' at line 5\n[SQL: SELECT \n    COUNT(*) AS repeat_transactions_count,\n    SUM(AmountInvolved) AS total_amount,\n    ROUND((SUM(AmountInvolved) / (SELECT SUM(AmountInvolved) FROM AStockEventsDB.LC_MajorContract WHERE AgreementDate BETWEEN '2021-01-01' AND '2021-12-31') * 100, 2) AS total_amount_percentage\nFROM \n    AStockEventsDB.LC_MajorContract\nWHERE \n    AgreementDate BETWEEN '2021-01-01' AND '2021-12-31'\n    AND ObjectName IN (\n        SELECT ObjectName\n        FROM AStockEventsDB.LC_MajorContract\n        WHERE AgreementDate BETWEEN '2021-01-01' AND '2021-12-31'\n        GROUP BY ObjectName\n        HAVING COUNT(*) > 1\n    );\n\nSELECT \n    ObjectName,\n    SUM(AmountInvolved) AS total_amount,\n    ROUND((SUM(AmountInvolved) / (SELECT SUM(AmountInvolved) FROM AStockEventsDB.LC_MajorContract WHERE AgreementDate BETWEEN '2021-01-01' AND '2021-12-31') * 100, 2) AS total_amount_percentage\nFROM \n    AStockEventsDB.LC_MajorContract\nWHERE \n    AgreementDate BETWEEN '2021-01-01' AND '2021-12-31'\nGROUP BY \n    ObjectName\nORDER BY \n    total_amount DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT EventDate, EventName, EmotionDirection\nFROM InstitutionDB.PS_NewsSecurity\nWHERE CompanyCode = (SELECT CompanyCode FROM EP_CompanyMain WHERE CompanyName = '华峰化学')\nAND YEAR(EventDate) = 2019;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT \n    AStockEventsDB.LC_SuspendResumption.SuspendDate AS StartDate, \n    AStockEventsDB.LC_SuspendResumption.ResumptionDate AS EndDate, \n    AStockEventsDB.LC_SuspendResumption.SuspendReason AS Reason\nFROM \n    AStockEventsDB.LC_SuspendResumption\nWHERE \n    AStockEventsDB.LC_SuspendResumption.InnerCode = (SELECT SecuMain.InnerCode FROM SecuMain WHERE SecuMain.CompanyName = '华峰化学')\n    AND AStockEventsDB.LC_SuspendResumption.SuspendDate IS NOT NULL\n    AND AStockEventsDB.LC_SuspendResumption.ResumptionDate IS NOT NULL;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column '变动前后5个交易日累计涨跌幅' in 'field list'\n[SQL: SELECT \n    A.TranDate,\n    A.PCTBeforeTran AS '变动前持股比例',\n    A.PCTAfterTran AS '变动后持股比例',\n    B.变动前后5个交易日累计涨跌幅\nFROM \n    AStockShareholderDB.LC_ShareTransfer A\nJOIN \n    (SELECT \n        CompanyCode, \n        TranDate, \n        CAST(SUM(CAST(变动前后5个交易日累计涨跌幅 AS DECIMAL)) AS DECIMAL(10,2)) AS '变动前后5个交易日累计涨跌幅'\n     FROM \n        AStockShareholderDB.LC_ShareTransfer\n     WHERE \n        TranDate BETWEEN '2019-01-01' AND '2019-12-31'\n     GROUP BY \n        CompanyCode, \n        TranDate) B ON A.CompanyCode = B.CompanyCode AND A.TranDate = B.TranDate\nWHERE \n    A.TranDate BETWEEN '2019-01-01' AND '2019-12-31'\n    AND A.PCTOfTansferer = (SELECT MAX(PCTOfTansferer) FROM AStockShareholderDB.LC_ShareTransfer WHERE TranDate BETWEEN '2019-01-01' AND '2019-12-31')]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1046 (3D000): No database selected\n[SQL: SELECT \n    ROUND((TotalLiability / TotalAssets), 2) AS DebtRatio,\n    ROUND((TotalCurrentAssets / TotalAssets), 2) AS CurrentAssetsRatio,\n    ROUND((TotalNonCurrentAssets / TotalAssets), 2) AS NonCurrentAssetsRatio\nFROM \n    AStockFinanceDB.LC_BalanceSheetAll\nWHERE \n    CompanyCode = (SELECT CompanyCode FROM SecuMain WHERE ShortName = '大北农')\n    AND EndDate = '2019-03-31'\n    AND IfAdjusted = '6' -- 第一季度末调整\n    AND IfMerged = '1' -- 合并报表\n    AND AccountingStandards = '1' -- 新会计准则]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TotalGuaranteeAmount": 360000000.0,
+                "MaxGuaranteeTerm": 24.0
+            },
+            {
+                "TotalGuaranteeAmount": 940800000.0,
+                "MaxGuaranteeTerm": 24.0
+            },
+            {
+                "TotalGuaranteeAmount": 200000000.0,
+                "MaxGuaranteeTerm": 60.0
+            },
+            {
+                "TotalGuaranteeAmount": 98654299.3,
+                "MaxGuaranteeTerm": 120.0
+            },
+            {
+                "TotalGuaranteeAmount": 267280300.0,
+                "MaxGuaranteeTerm": 24.0
+            },
+            {
+                "TotalGuaranteeAmount": 590000000.0,
+                "MaxGuaranteeTerm": 24.0
+            },
+            {
+                "TotalGuaranteeAmount": 37000000.0,
+                "MaxGuaranteeTerm": 36.0
+            },
+            {
+                "TotalGuaranteeAmount": 2385000000.0,
+                "MaxGuaranteeTerm": 36.0
+            },
+            {
+                "TotalGuaranteeAmount": 690000000.0,
+                "MaxGuaranteeTerm": 204.0
+            },
+            {
+                "TotalGuaranteeAmount": 2724860000.0,
+                "MaxGuaranteeTerm": 156.0
+            }
+        ],
+        "count": 10
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockeventsdb.lc_smattendinfo' doesn't exist\n[SQL: SELECT\n    LC_SMAttendInfo.MeetingDate AS '股东大会召开日期',\n    ROUND(LC_SMAttendInfo.ShareARatio, 2) AS 'A股股东代表股份占比',\n    ROUND(LC_SMAttendInfo.HSharesRatio, 2) AS 'H股股东代表股份占比',\n    ROUND(LC_SMAttendInfo.OtherSharesRatio, 2) AS '其他基础股票股东代表股份占比',\n    ROUND(LC_SMAttendInfo.ShareARatio, 2) AS 'A类普通股股东代表股份比例',\n    ROUND(LC_SMAttendInfo.ShareBRatio, 2) AS 'B类普通股股东代表股份比例'\nFROM\n    AStockEventsDB.LC_SMAttendInfo\nWHERE\n    LC_SMAttendInfo.CompanyCode = (SELECT CompanyCode FROM AStockFinanceDB.LC_BalanceSheetAll WHERE Year = 2019 LIMIT 1)\n    AND LC_SMAttendInfo.MeetingDate BETWEEN '2019-01-01' AND '2019-12-31'\nORDER BY\n    LC_SMAttendInfo.MeetingDate DESC\nLIMIT 10;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "buyback_count": 0,
+                "total_buyback_amount": null
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'RepurchaseAmount' in 'field list'\n[SQL: SELECT MAX(RepurchaseAmount) AS MaxAmount, RepurchaseDate\nFROM AStockBasicInfoDB.LC_StockArchives\nWHERE RepurchaseAmount = (SELECT MAX(RepurchaseAmount) FROM AStockBasicInfoDB.LC_StockArchives);]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "AvgDurationDays": 314.36,
+                "AvgBuybackAmount": 310290723.99
+            }
+        ],
+        "count": 1
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'TurnoverRate' in 'field list'\n[SQL: SELECT \n    ClosePrice,\n    TurnoverVolume,\n    TurnoverRate,\n    ROUND(ClosePrice, 2) AS ClosePriceFormatted,\n    ROUND(TurnoverRate, 2) AS TurnoverRateFormatted\nFROM \n    AStockMarketQuotesDB.QT_DailyQuote\nWHERE \n    TradingDay = '2021-12-24']\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'a.TurnoverRate' in 'field list'\n[SQL: SELECT \n    a.TradingDay,\n    a.ClosePrice,\n    a.TurnoverVolume,\n    a.TurnoverRate,\n    b.IfHighestHPriceRW,\n    b.IfHighestHPriceRM,\n    b.MAverageArrangements\nFROM \n    AStockMarketQuotesDB.QT_DailyQuote a\nJOIN \n    AStockMarketQuotesDB.CS_StockPatterns b ON a.InnerCode = b.InnerCode AND a.TradingDay = b.TradingDay\nWHERE \n    a.InnerCode = '指定的证券内部编码' AND\n    a.TradingDay = '2021-12-24']\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1055 (42000): Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'astockmarketquotesdb.QT_DailyQuote.TurnoverVolume' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT \n    MAX(HighPrice) AS MaxPrice,\n    MIN(LowPrice) AS MinPrice,\n    TradingDay AS MaxVolumeDay\nFROM \n    AStockMarketQuotesDB.QT_DailyQuote\nWHERE \n    TradingDay BETWEEN '2019-01-01' AND '2019-03-31'\nGROUP BY \n    TradingDay\nORDER BY \n    TurnoverVolume DESC\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1055 (42000): Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'astockmarketquotesdb.DailyQuote.HighPrice' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT\n    MAX(DailyQuote.TradingDay) AS MaxVolumeDay,\n    CASE\n        WHEN DailyQuote.HighPrice > Performance.HighPriceRW THEN '近一周新高'\n        WHEN DailyQuote.HighPrice > Performance.HighPriceRM THEN '近一月新高'\n        WHEN DailyQuote.HighPrice > Performance.HighPriceTM THEN '近一季度新高'\n        ELSE '无新高'\n    END AS NewHigh\nFROM\n    AStockMarketQuotesDB.QT_DailyQuote AS DailyQuote\nJOIN\n    AStockMarketQuotesDB.QT_StockPerformance AS Performance ON DailyQuote.InnerCode = Performance.InnerCode\nWHERE\n    DailyQuote.TurnoverVolume = (\n        SELECT MAX(TurnoverVolume)\n        FROM AStockMarketQuotesDB.QT_DailyQuote\n        WHERE TradingDay >= DATE_SUB(CURRENT_DATE, INTERVAL 1 YEAR)\n    )\nAND\n    DailyQuote.TradingDay BETWEEN DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AND CURRENT_DATE\nAND\n    Performance.TradingDay BETWEEN DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AND CURRENT_DATE\nAND\n    Performance.TradingDay BETWEEN DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AND CURRENT_DATE\nAND\n    Performance.TradingDay BETWEEN DATE_SUB(CURRENT_DATE, INTERVAL 1 QUARTER) AND CURRENT_DATE\nGROUP BY\n    DailyQuote.InnerCode]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 46114260.0,
+                "VolumePercentage": 327.74,
+                "PriceChangePercentage": 37.9
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 29540929.0,
+                "VolumePercentage": 209.95,
+                "PriceChangePercentage": -79.19
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 227557612.0,
+                "VolumePercentage": 1617.28,
+                "PriceChangePercentage": -38.87
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 33636235.0,
+                "VolumePercentage": 239.06,
+                "PriceChangePercentage": -16.6
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 127578930.0,
+                "VolumePercentage": 906.72,
+                "PriceChangePercentage": -82.69
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 75979904.0,
+                "VolumePercentage": 540.0,
+                "PriceChangePercentage": -30.16
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 34874732.0,
+                "VolumePercentage": 247.86,
+                "PriceChangePercentage": 41.68
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 30156563.0,
+                "VolumePercentage": 214.33,
+                "PriceChangePercentage": -8.21
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 29986047.0,
+                "VolumePercentage": 213.11,
+                "PriceChangePercentage": 250.31
+            },
+            {
+                "TradingDay": "2019-01-02 12:00:00.000",
+                "TurnoverVolume": 46555567.0,
+                "VolumePercentage": 330.88,
+                "PriceChangePercentage": -36.79
+            }
+        ],
+        "count": 10
+    },
+    {
+        "success": true,
+        "data": [
+            {
+                "FPSHName": "南京南钢钢铁联合有限公司",
+                "ReceiverName": "建信(北京)投资基金管理有限责任公司",
+                "MaxPledgeRatio": 0.3603,
+                "InvolvedSum": 1427730000.0,
+                "PCTOfTotalShares": 0.3603
+            }
+        ],
+        "count": 1
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1140 (42000): In aggregated query without GROUP BY, expression #3 of SELECT list contains nonaggregated column 'astockfinancedb.BalanceSheet.TotalAssets'; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT \n    COUNT(*) AS TotalPledges, \n    SUM(InvolvedSum) AS TotalPledgeAmount, \n    ROUND((SUM(InvolvedSum) / TotalAssets) * 100, 2) AS RatioToTotalAssets\nFROM \n    AStockShareholderDB.LC_ShareFP AS ShareFP\nJOIN \n    AStockFinanceDB.LC_BalanceSheetAll AS BalanceSheet\nON \n    ShareFP.CompanyCode = BalanceSheet.CompanyCode\nWHERE \n    ShareFP.InfoPublDate BETWEEN '2019-01-01' AND '2019-12-31'\n    AND ShareFP.TypeSelect = 3 -- Equity Pledge\n    AND BalanceSheet.EndDate = '2019-12-31']\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1140 (42000): In aggregated query without GROUP BY, expression #3 of SELECT list contains nonaggregated column 'SubQuery.ReceptionDate'; this is incompatible with sql_mode=only_full_group_by\n[SQL: SELECT \n  COUNT(*) AS ActivityCount,\n  MAX(ParticipantCount) AS MaxParticipantCount,\n  ReceptionDate AS MaxParticipantDate\nFROM (\n  SELECT \n    ReceptionDate,\n    COUNT(DISTINCT Participant) AS ParticipantCount\n  FROM \n    AStockEventsDB.LC_InvestorRa\n  WHERE \n    YEAR(ReceptionDate) = 2019 AND MONTH(ReceptionDate) = 1\n  GROUP BY \n    ReceptionDate\n) AS SubQuery\nWHERE \n  ParticipantCount = (SELECT MAX(ParticipantCount) FROM (\n    SELECT \n      COUNT(DISTINCT Participant) AS ParticipantCount\n    FROM \n      AStockEventsDB.LC_InvestorRa\n    WHERE \n      YEAR(ReceptionDate) = 2019 AND MONTH(ReceptionDate) = 1\n    GROUP BY \n      ReceptionDate\n  ) AS SubQueryMax)\nLIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockshareholderdb.lc_rewardstat' doesn't exist\n[SQL: SELECT \n    A.ConceptCode,\n    ROUND(AVG(B.TotalYearPay / B.NumPayManagers), 2) AS AvgManagerSalary,\n    COUNT(DISTINCT C.InfoPublDate) AS InvestorRelationFrequency\nFROM \n    AStockIndustryDB.LC_COConcept A\nJOIN \n    AStockShareholderDB.LC_RewardStat B ON A.InnerCode = B.CompanyCode\nJOIN \n    AStockEventsDB.LC_InvestorRa C ON A.InnerCode = C.InnerCode\nWHERE \n    YEAR(B.InfoPublDate) = 2021 AND\n    YEAR(C.InfoPublDate) = 2021 AND\n    A.IndiState = 1\nGROUP BY \n    A.ConceptCode;]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "success": true,
+        "data": [],
+        "count": 0
+    },
+    {
+        "detail": "查询执行失败: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'astockshareholderdb.lc_coconcept' doesn't exist\n[SQL: SELECT\n    A.ConceptCode,\n    AVG(B.RestrictedAFloatShares / B.TotalShares * 100) AS AvgRestrictedSharesPercentage\nFROM\n    AStockShareholderDB.LC_COConcept AS A\nJOIN\n    AStockShareholderDB.LC_ShareStru AS B ON A.InnerCode = B.InnerCode\nWHERE\n    A.IndiState = 1 AND\n    B.EndDate = '2021-12-31'\nGROUP BY\n    A.ConceptCode\nHAVING\n    A.ConceptCode IN (\n        SELECT\n            ConceptCode\n        FROM\n            AStockShareholderDB.LC_COConcept\n        WHERE\n            InnerCode = (SELECT InnerCode FROM AStockShareholderDB.LC_MainSHListNew WHERE SecuCode = '中直股份')\n    )]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+    }
+]
