@@ -1,0 +1,12 @@
+数据字典.xlsx
+sheet1名称：库表关系
+表头：库名中文、库名英文、表英文、表中文、表描述
+样例数据：
+上市公司基本资料	AStockBasicInfoDB	LC_StockArchives	公司概况	收录上市公司的基本情况，包括：联系方式、注册信息、中介机构、行业和产品、公司证券品种及背景资料等内容。
+
+sheet2名称：表字段信息
+表头：table_name、column_name、column_description、注释、Annotation	
+样例数据：
+LC_StockArchives	CompanyCode	公司代码	公司代码（CompanyCode）：与“证券主表（SecuMain）”中的“公司代码（CompanyCode）”关联，得到上市公司的交易代码、简称等。	Company Code (CompanyCode): Associated with the "Company Code (CompanyCode)" in "Securities Main Table (SecuMain)", to obtain the trading code, abbreviation, etc. of the listed company.	
+
+请你根据数据字典如何构建graphRAG，请你给出一套设计方案
