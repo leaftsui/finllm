@@ -4,7 +4,7 @@ import json
 import requests
 
 llm = LLMClient()
-def exec_sql_s(sql,show=False):
+def exec_sql_s(sql):
     headers = {
         "Authorization": "Bearer 98221d0bdc1341b0aaccef9198585f4d",
         "Accept": "application/json"
@@ -14,10 +14,7 @@ def exec_sql_s(sql,show=False):
         "sql": sql,
         "limit": 100
     })
-    if show:
-        print(response.text)
-    if 'data' not in response.json():
-        print(response.json())
+    print(response.text)
     return response.json()['data']
 
 

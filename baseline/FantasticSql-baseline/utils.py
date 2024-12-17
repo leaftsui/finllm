@@ -7,10 +7,10 @@ import pandas as pd
 import numpy as np
 
 
-def exec_sql(sql_message,if_print=True):
+def exec_sql(sql_message, if_print=True):
     sql = re.findall('```sql(.*?)```', sql_message, re.DOTALL)[-1]
     headers = {
-        "Authorization": "Bearer 98221d0bdc1341b0aaccef9198585f4d",
+        "Authorization": "Bearer 6d2cbb4a2de743bd92a9f7df3398210f",
         "Accept": "application/json"
     }
     url = "https://comm.chatglm.cn/finglm2/api/query"
@@ -68,7 +68,6 @@ def get_table_desc(table_name, columns=[], get_sample=False, get_colunm=True, re
         full_name = table_name2db_name[table_name] + '.' + table_name
     a1 = table_name2desc[table_name]
     if columns:
-
         pos_columns = [i['column_name'] for i in grouped_dict[table_name] if \
                        i['column_name'] in columns or re.search('id|code|day$', i['column_name'], re.IGNORECASE)]
         a2 = json.dumps(
@@ -128,23 +127,23 @@ def recall_table(question_content, tables_desc=table_content):
     :return:
     '''
     messages = [{'role': 'system', 'content': f'''
-数据表说明如下：
-{tables_desc}
-用户会给你数据表描述和问题串，请针对每个问题串仔细分析其中的每个问题需要用哪些表格查询，可以是一个或者多个。'''},
+    数据表说明如下：
+    {tables_desc}
+    用户会给你数据表描述和问题串，请针对每个问题串仔细分析其中的每个问题需要用哪些表格查询，可以是一个或者多个。'''},
                 {'role': 'user', 'content': f"""问题串为:`{question_content}`""" + """
-使用以下格式回答问题：
-```json
-[
-{"question":"针对的question1","query_requirements":"针对问题里的哪些查询需求","table_name":"表格名称"},
-{"question":"针对的question1","query_requirements":"针对问题里的哪些查询需求","table_name":"表格名称"},
-{"question":"针对的question2","query_requirements":"针对问题里的哪些查询需求","table_name":"表格名称"},
-...
-]
-```
-备注，针对同一个问题，可以有多条表数据。
-请区分港股美股A股的数据在对应的表格内。
-table_name只多不少，尽可能列举全，且为`表英文`字段。
-"""}]
+    使用以下格式回答问题：
+    ```json
+    [
+    {"question":"针对的question1","query_requirements":"针对问题里的哪些查询需求","table_name":"表格名称"},
+    {"question":"针对的question1","query_requirements":"针对问题里的哪些查询需求","table_name":"表格名称"},
+    {"question":"针对的question2","query_requirements":"针对问题里的哪些查询需求","table_name":"表格名称"},
+    ...
+    ]
+    ```
+    备注，针对同一个问题，可以有多条表数据。
+    请区分港股美股A股的数据在对应的表格内。
+    table_name只多不少，尽可能列举全，且为`表英文`字段。
+    """}]
 
     min_table = super_eval(llm(messages))
     return min_table

@@ -4,7 +4,7 @@ import requests
 
 def exec_sql_s(sql):
     headers = {
-        "Authorization": "Bearer 98221d0bdc1341b0aaccef9198585f4d",
+        "Authorization": "Bearer 6d2cbb4a2de743bd92a9f7df3398210f",
         "Accept": "application/json"
     }
     url = "https://comm.chatglm.cn/finglm2/api/query"
