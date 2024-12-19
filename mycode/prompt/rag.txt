@@ -9,4 +9,3 @@ sheet2名称：表字段信息
 样例数据：
 LC_StockArchives	CompanyCode	公司代码	公司代码（CompanyCode）：与“证券主表（SecuMain）”中的“公司代码（CompanyCode）”关联，得到上市公司的交易代码、简称等。	Company Code (CompanyCode): Associated with the "Company Code (CompanyCode)" in "Securities Main Table (SecuMain)", to obtain the trading code, abbreviation, etc. of the listed company.	
 
-请你根据数据字典如何构建graphRAG，请你给出一套设计方案

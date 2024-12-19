@@ -75,7 +75,6 @@ class LLMClient:
 
 if __name__ == '__main__':
     llm_client = LLMClient()
-
     llm_client.chat('你好')
-    print(llm_client.Embedding('你好'))
-    print(len(llm_client.Embedding('你好')))
+    # print(llm_client.Embedding('你好'))
+    # print(len(llm_client.Embedding('你好')))

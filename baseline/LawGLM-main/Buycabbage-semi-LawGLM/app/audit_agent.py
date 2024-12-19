@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 from Levenshtein import ratio
 
-client = ZhipuAI()
+client = ZhipuAI(api_key="f689043de7886e8c604802325fa16392.9m8y9PP2XBKP9ZJy")
 
 domain = "https://comm.chatglm.cn"
 headers = {

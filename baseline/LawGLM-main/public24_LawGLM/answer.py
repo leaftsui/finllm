@@ -94,8 +94,6 @@ def match_col(query, correct_times =2):
     return  fail_to_correct, is_abb, new_question, new_matched_keywords, corrected_entity_keywords
 
 
-
-
 def invoke_plan(id, k, plan_task_str,  task_list,  intermmediate_save_info = {}, intermmediate_save_paths = {} ,regulator_limit = 3):
     question_save_folder = os.path.join("./cache/", str(id))
     work_finish = False

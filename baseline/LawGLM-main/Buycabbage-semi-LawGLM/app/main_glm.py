@@ -1,3 +1,6 @@
+import os
+os.environ['ZHIPUAI_API_KEY'] = 'f689043de7886e8c604802325fa16392.9m8y9PP2XBKP9ZJy'
+
 import audit_agent
 import suzhuang_agent
 import sbaogao_agent
@@ -80,5 +83,4 @@ def main_answer(question):
 
 
 if __name__ == "__main__":
-
     main_answer('保定市天威西路2222号地址对应的省市区县分别是？')
