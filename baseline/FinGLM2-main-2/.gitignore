@@ -1,0 +1,14 @@
+*__pycache__/
+*.DS_Store
+*.idea
+output*
+test*
+*.ipynb_checkpoints
+venv
+*.jsonl
+*.csv
+*.xlsx
+*.xls
+*.doc
+*.docx
+check
