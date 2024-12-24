@@ -521,6 +521,10 @@ def to_select(text):
     print(sql_statement)
     print('***********Extracted SQL****************')
     optimized_sql = replace_date_with_day(sql_statement)
+
+    # SQL校验
+    validate_sql(optimized_sql)
+    # 追加校验结果
     result = select_data(optimized_sql)
     return result
 
@@ -853,6 +857,7 @@ def run_conversation_until_complete(messages, max_rounds=6):
 
         question = response.choices[0].message.content
         select_result = to_select(question)
+        # 对校验结果进行反思
         messages.append({"role": "assistant", "content": question})
         messages.append({"role": "user", "content": str(select_result)})
 
@@ -1158,6 +1163,64 @@ def main_answer(q_json_list, start_index=0, end_index=None):
             json.dump(data_list_result, json_file, ensure_ascii=False, indent=4)
     return data_list_result
 
+def get_table_structure(table):
+    schema, table_only = table.split('.', 1)
+    sql = f"""
+    SELECT 
+        TABLE_NAME AS `Table`, 
+        COLUMN_NAME AS `Column`, 
+        DATA_TYPE AS `Type`, 
+        IS_NULLABLE AS `Null`, 
+        NUMERIC_PRECISION AS `Precision`, 
+        NUMERIC_SCALE AS `Scale`, 
+        COLUMN_KEY AS `Key`, 
+        COLUMN_COMMENT AS `Comment`
+    FROM 
+        information_schema.COLUMNS 
+    WHERE 
+        TABLE_SCHEMA = '{schema}' AND 
+        TABLE_NAME = '{table_only}';
+    """
+    return exec_sql_s(sql)
+
+
+def validate_sql(sql):
+    """
+    校验SQL
+    1.表结构是否匹配
+        提取SQL中的表
+        找到表结构
+        大模型判断SQL中的表结构是否正确
+    2.字段是否正确
+    3.查询条件
+    """
+
+    # 正则表达式用于匹配表名
+    # 这个表达式假设表名紧跟在 'FROM' 后面，并且可能包含字母、数字、下划线和点号
+    table_name_pattern = r'FROM\s+([A-Za-z0-9_\.]+)'
+
+    # 搜索给定的SQL字符串
+    match = re.search(table_name_pattern, sql, re.IGNORECASE)
+    # 如果找到匹配项，则返回表名；否则返回None
+    if match:
+        table_name = match.group(1)
+        table_structure = get_table_structure(table_name)
+        print(table_structure)
+
+    return
+
+
+# sql = f"""
+#     SELECT
+#         *
+#     FROM
+#         information_schema.COLUMNS
+#     WHERE
+#         TABLE_SCHEMA = 'AStockIndustryDB' AND
+#         TABLE_NAME = 'LC_StockArchives';
+#     """
+# print(exec_sql_s(sql))
+
 if __name__ == "__main__":
     # Load input data
     with open(question_data_path, 'r', encoding='utf-8') as file:
@@ -1168,7 +1231,7 @@ if __name__ == "__main__":
     start_idx = 0
     end_idx = 101  # Specify processing data in the range 0-101
 
-    results = main_answer(q_json_list, start_index=start_idx, end_index=end_idx)
+    results = main_answer(q_json_list, start_index=4, end_index=6)
 
     # Write the processing results to a file
     with open('result.json', 'w', encoding='utf-8') as json_file:

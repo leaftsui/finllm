@@ -443,6 +443,18 @@ matched_columns
 
 
 
+## 数据库查询
+
+
+
+查询表结构
+
+```sql
+select * from INFORMATION_SCHEMA.COLUMNS
+```
+
+
+
 
 
 ## 实体提取
@@ -512,14 +524,21 @@ SQL专家生成
 
 ### SQL校正策略（SQL Correction Strategies）
 
-- 目的：修正由模型生成的SQL中的语法错误。
-- 方法：例如DIN-SQL提出的自我校正模块，通过不同的提示指导模型识别和纠正错误。
+目的：修正由模型生成的SQL中的语法错误。
+
+方法：例如DIN-SQL提出的自我校正模块，通过不同的提示指导模型识别和纠正错误。
 
 https://www.51cto.com/aigc/1851.html
 
 
 
+校验项
 
+表结构校验
+
+字段是否匹配正确
+
+查询条件
 
 
 
