@@ -1,0 +1,42 @@
+[
+    {
+        "tid": "tttt----5",
+        "team": [
+            {
+                "id": "tttt----5----5-2-1",
+                "question": "化工纳入过多少个子类概念？",
+                "answer": "化工纳入的子类概念数量 63"
+            },
+            {
+                "id": "tttt----5----5-2-2",
+                "question": "2021年纳入过多少个？分别是？",
+                "answer": "2021年化工纳入的子类概念数量 15, 具体子类概念 [{'SubclassName': 'BAT', 'ConceptCount': 2}, {'SubclassName': 'IPO', 'ConceptCount': 1}, {'SubclassName': '东北', 'ConceptCount': 1}, {'SubclassName': '互联互通', 'ConceptCount': 2}, {'SubclassName': '互联网', 'ConceptCount': 5}, {'SubclassName': '交运', 'ConceptCount': 1}, {'SubclassName': '人口', 'ConceptCount': 2}, {'SubclassName': '休闲服务', 'ConceptCount': 2}, {'SubclassName': '传媒概念', 'ConceptCount': 1}, {'SubclassName': '体育运动', 'ConceptCount': 1}, {'SubclassName': '先进材料', 'ConceptCount': 2}, {'SubclassName': '养老', 'ConceptCount': 1}, {'SubclassName': '农业', 'ConceptCount': 5}, {'SubclassName': '冬奥会', 'ConceptCount': 1}, {'SubclassName': '创业创投', 'ConceptCount': 2}]"
+            },
+            {
+                "id": "tttt----5----5-2-3",
+                "question": "2021年纳入的这些概念的股票有多少只？分别属于哪些三级行业（仅考虑2021年新纳入的行业数据）？",
+                "answer": "2021年化工新纳入子类概念数量 0, 涉及股票数量 0, 具体股票及三级行业 []"
+            }
+        ]
+    },
+    {
+        "tid": "tttt----6",
+        "team": [
+            {
+                "id": "tttt----6----6-2-1",
+                "question": "天顺风能披露了多少次担保信息？",
+                "answer": "天顺风能担保信息披露次数 44"
+            },
+            {
+                "id": "tttt----6----6-2-2",
+                "question": "他一共披露过多少次借贷信息？2021年披露了多少次？",
+                "answer": "TotalDisclosures 44, Year2021Disclosures 18"
+            },
+            {
+                "id": "tttt----6----6-2-3",
+                "question": "他一共披露了多少次重大资产重组信息？2021年披露了多少次？2020年披露了多少次？",
+                "answer": "TotalDisclosureCount 4, Year2021DisclosureCount 4, Year2020DisclosureCount 0"
+            }
+        ]
+    }
+]

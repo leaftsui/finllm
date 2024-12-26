@@ -9,7 +9,7 @@ from tqdm import tqdm
 import time
 
 Access_Token = 'a30d01d4630a43b087a1f9851680902a'  # Competition team Token, used to access the competition database
-MODEL = "glm-4-plus"  # Default large model used; this solution uses the GLM-4-PLUS model entirely
+MODEL = "glm-4-air"  # Default large model used; this solution uses the GLM-4-PLUS model entirely
 client = ZhipuAI(api_key='f689043de7886e8c604802325fa16392.9m8y9PP2XBKP9ZJy')
 
 # Preprocess the competition questions here
@@ -522,11 +522,10 @@ def to_select(text):
     print('***********Extracted SQL****************')
     optimized_sql = replace_date_with_day(sql_statement)
 
-    # SQL校验
-    validate_sql(optimized_sql)
+
     # 追加校验结果
     result = select_data(optimized_sql)
-    return result
+    return result,optimized_sql
 
 def exec_sql_s(sql):
     """
@@ -856,7 +855,7 @@ def run_conversation_until_complete(messages, max_rounds=6):
             break  # 如果对话轮数超过最大值，则退出循环
 
         question = response.choices[0].message.content
-        select_result = to_select(question)
+        select_result,sql = to_select(question)
         # 对校验结果进行反思
         messages.append({"role": "assistant", "content": question})
         messages.append({"role": "user", "content": str(select_result)})
@@ -1184,7 +1183,7 @@ def get_table_structure(table):
     return exec_sql_s(sql)
 
 
-def validate_sql(sql):
+def valid_struct(sql):
     """
     校验SQL
     1.表结构是否匹配
@@ -1205,9 +1204,7 @@ def validate_sql(sql):
     if match:
         table_name = match.group(1)
         table_structure = get_table_structure(table_name)
-        print(table_structure)
-
-    return
+    return table_structure
 
 
 # sql = f"""

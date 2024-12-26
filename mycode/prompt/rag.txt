@@ -1,3 +1,26 @@
+任务描述
+1.提出设计方案，设计搜索算法能够根据问题描述匹配到数据库中的相关表，表的信息以xlsx文件的形式储存，问题以json格式保存
+
+问题样例
+    {
+        "tid": "tttt----1",
+        "team": [
+            {
+                "id": "tttt----1----1-1-1",
+                "question": "600872的全称、A股简称、法人、法律顾问、会计师事务所及董秘是？"
+            },
+            {
+                "id": "tttt----1----1-1-2",
+                "question": "该公司实控人是否发生改变？如果发生变化，什么时候变成了谁？是哪国人？是否有永久境外居留权？（回答时间用XXXX-XX-XX）"
+            },
+            {
+                "id": "tttt----1----1-1-3",
+                "question": "在实控人发生变化的当年股权发生了几次转让？"
+            }
+        ]
+    },
+
+数据字典的格式如下
 数据字典.xlsx
 sheet1名称：库表关系
 表头：库名中文、库名英文、表英文、表中文、表描述
@@ -8,4 +31,3 @@ sheet2名称：表字段信息
 表头：table_name、column_name、column_description、注释、Annotation	
 样例数据：
 LC_StockArchives	CompanyCode	公司代码	公司代码（CompanyCode）：与“证券主表（SecuMain）”中的“公司代码（CompanyCode）”关联，得到上市公司的交易代码、简称等。	Company Code (CompanyCode): Associated with the "Company Code (CompanyCode)" in "Securities Main Table (SecuMain)", to obtain the trading code, abbreviation, etc. of the listed company.	
-
